@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5032516496807642956
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5032516496807642957}
+  - component: {fileID: 5032516496807642946}
+  m_Layer: 0
+  m_Name: BulletPool
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5032516496807642957
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5032516496807642956}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.2, y: 12.3, z: -0.004}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5032516496807642946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5032516496807642956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98a0af5385c78e447af69190f50be5d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletSpeed: 20
+  Target: {fileID: 0}
+  startPosition: {x: 0, y: 0, z: 0}
+  BBPellet: {fileID: 0}
+  Bullet: {fileID: 8841450212318421260, guid: 16a1ede5f4c5369449398cccc6dbc82c, type: 3}
+  Bomb: {fileID: 6670067664397407515, guid: 98bee03b3e19a3f4f8121844c4a8aae5, type: 3}
+  Pellet: {fileID: 5189228656106079435, guid: 9deef48ab64823c4dba7e6a3cc2547f1, type: 3}
+  DamageTimeLeft: 5
+  TimerActive: 0
+  BombTimer: 0
+  BombTimeLeft: 3
+  BombExplo: {fileID: 6861971168483821867, guid: e0b36f1130559c041b7b3006d82a53ee,
+    type: 3}
+  AttackManager: {fileID: 0}
+  damageMade: 1
+  spawnBullet: 0
+  spawnBomb: 0
+  spawnPellet: 0
+  damageMax: 0
+  damageText: {fileID: 0}
+  spawnAllow: 1
+  AttackAllowed: 0
+  AttackTimer: 5
+  AttackTimerLeft: 5
+  CombatLaunch: 0
+  CombatTrue: 0
+  AttackLaunchTimer: 0

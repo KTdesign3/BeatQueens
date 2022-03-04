@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 4d24136b622d56a4083176e88cf9c3df
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - PlayerRB: {instanceID: 0}
+  - Navi: {fileID: 919132149155446097, guid: bbc1b28f515f1844b83cb674956da97e, type: 3}
+  - Navi3DAnimator: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

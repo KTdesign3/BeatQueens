@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Activator
+  - Ground
+  - LosePointBox
+  - Damage
+  - Boundary
+  - Target
+  - GroundCheck
+  - AttackRange
+  - Enemy
+  - PlayerDamage
+  - Follower
+  - HandContainer
+  - Bullet
+  - PelletSpawner
+  - EnemyHandHurtPlayer
+  - EnemyHandHurtEnemy
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Arrows
+    uniqueID: 2451307363
+    locked: 0

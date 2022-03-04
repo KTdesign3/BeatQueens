@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 98a0af5385c78e447af69190f50be5d3
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - Target: {instanceID: 0}
+  - BBPellet: {fileID: 6876027047282094448, guid: 3833aa2756e24724a98aff5b537a3c82,
+      type: 3}
+  - Bullet: {fileID: 8841450212318421260, guid: 16a1ede5f4c5369449398cccc6dbc82c,
+      type: 3}
+  - Bomb: {fileID: 6670067664397407515, guid: 98bee03b3e19a3f4f8121844c4a8aae5, type: 3}
+  - Pellet: {fileID: 2238707489047225526, guid: 1ff4f62f61269ff40b9fca98b4a270d6,
+      type: 3}
+  - BombExplo: {fileID: 6861971168483821867, guid: e0b36f1130559c041b7b3006d82a53ee,
+      type: 3}
+  - AttackManager: {instanceID: 0}
+  - damageText: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
