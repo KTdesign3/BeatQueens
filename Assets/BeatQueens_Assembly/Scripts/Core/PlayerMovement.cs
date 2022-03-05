@@ -129,14 +129,15 @@ public class PlayerMovement : MonoBehaviour
         if (PlayerSpeed < 0.01)
         {
             
-                Navi3DAnimator.SetBool("NaviSpeed0", true);
+            //Navi3DAnimator.SetBool("NaviSpeed0", true);
+           
         }
 
         if (PlayerSpeed > 0.01)
         {
 
-            Navi3DAnimator.SetBool("DashAttackActive", false);
-            Navi3DAnimator.SetBool("NaviSpeed0", true);
+           // Navi3DAnimator.SetBool("DashAttackActive", false);
+            //Navi3DAnimator.SetBool("NaviSpeed0", false);
         }
 
 
@@ -145,6 +146,10 @@ public class PlayerMovement : MonoBehaviour
             Navi3DAnimator.SetBool("NaviOnGround", true);
             Navi3DAnimator.SetBool("NaviFallLeft", false);
             Navi3DAnimator.SetBool("NaviFallRight", false);
+            Navi3DAnimator.SetBool("NaviFallUpLeft", false);
+            Navi3DAnimator.SetBool("NaviFallUpRight", false);
+            Navi3DAnimator.SetBool("NaviJumpLeft", false);
+            Navi3DAnimator.SetBool("NaviJump", false);
         }
 
         if (OnFloor == false)
@@ -170,7 +175,8 @@ public class PlayerMovement : MonoBehaviour
 
             FacingLeft = true; //Tells you which way the player is facing. IMPORTANT FOR DASHING IN THE RIGT DIRECTION.
             FacingRight = false;
-
+            Navi3DAnimator.SetBool("NaviRunLeft", true);
+            Navi3DAnimator.SetBool("NaviRunRight", false);
 
         }
 
@@ -179,10 +185,37 @@ public class PlayerMovement : MonoBehaviour
 
             FacingLeft = false; //Tells you which way the player is facing. IMPORTANT FOR DASHING IN THE RIGT DIRECTION.
             FacingRight = true;
+            Navi3DAnimator.SetBool("NaviRunRight", true);
+            Navi3DAnimator.SetBool("NaviRunLeft", false);
 
 
         }
 
+        if (Input.GetKeyDown(KeyCode.A) == true && playerLocked == false && OnFloor == true && dashLeft == false)
+        {
+
+            Navi3DAnimator.SetBool("NaviRunLeft", true);
+
+        }
+
+        if (Input.GetKeyDown(KeyCode.D) == true && playerLocked == false && OnFloor == true && dashRight == false)
+        {
+
+            Navi3DAnimator.SetBool("NaviRunRight", true);
+
+        }
+
+
+        if (Input.GetKeyDown(KeyCode.D) == true && playerLocked == false)
+        {
+
+            FacingLeft = false; //Tells you which way the player is facing. IMPORTANT FOR DASHING IN THE RIGT DIRECTION.
+            FacingRight = true;
+            Navi3DAnimator.SetBool("NaviRunRight", true);
+            Navi3DAnimator.SetBool("NaviRunLeft", false);
+
+
+        }
 
         if (currentDashTime < maxDashTime) //If the current dash time is less than maxDashTime 
 
@@ -236,7 +269,7 @@ public class PlayerMovement : MonoBehaviour
         if (FacingRight == true)
         {
             FacingLeft = false;
-            PlayerRB.transform.Rotate(0, 0, 0); //Rotates player 180 when running.
+            //PlayerRB.transform.Rotate(0, 0, 0); //Rotates player 180 when running.
         }
 
 
@@ -262,7 +295,7 @@ public class PlayerMovement : MonoBehaviour
             FacingRight = false;
             print("Character facing left");
             walkingRight = true;
-            Navi3DAnimator.SetBool("NaviRunLeft", true);
+            Navi3DAnimator.SetBool("NaviFallLeft", true);
             Navi3DAnimator.SetBool("NaviRunRight", false);
 
 
@@ -343,6 +376,19 @@ public class PlayerMovement : MonoBehaviour
             print("Character pushing down on ground"); //This code controls the ground dash
         }
 
+        if (Input.GetKeyDown(KeyCode.A) == true && pressedDash == true && OnFloor == true && playerLocked == false)
+        {
+            print("Character dashing right");
+            PlayerRB.velocity = Vector2.left * DashSpeed; //Controls dashing speed
+                                                           //PlayerRB.velocity = Vector2.right * PlayerSpeed; //Controls running speed
+            FacingLeft = true; //Tells you which way the player is facing.
+            print("Character dashing left"); //This code controls the ground dash
+            //Navi3DAnimator.SetFloat("PlayerSpeed", Mathf.Abs(PlayerSpeed)); 
+            Navi3DAnimator.SetBool("NaviSpeed0", false);
+            Navi3DAnimator.SetBool("NaviDashLeft", true);
+            Navi3DAnimator.SetBool("NaviDashRight", false);
+        }
+
         if (Input.GetKeyDown(KeyCode.D) == true && pressedDash == true && OnFloor == true && playerLocked == false)
         {
             print("Character dashing right");
@@ -352,6 +398,8 @@ public class PlayerMovement : MonoBehaviour
             print("Character dashing right"); //This code controls the ground dash
             //Navi3DAnimator.SetFloat("PlayerSpeed", Mathf.Abs(PlayerSpeed)); 
             Navi3DAnimator.SetBool("NaviSpeed0", false);
+            Navi3DAnimator.SetBool("NaviDashLeft", false);
+            Navi3DAnimator.SetBool("NaviDashRight", true);
         }
 
 
@@ -360,6 +408,7 @@ public class PlayerMovement : MonoBehaviour
             Debug.Log("Navi running to the left");
             Navi3DAnimator.SetBool("NaviRunLeft", true);
             Navi3DAnimator.SetBool("NaviRunRight", false);
+            Navi3DAnimator.SetBool("NaviSpeed0", false);
         }
 
         if (Input.GetKeyDown(KeyCode.D) == true && pressedDash == false && OnFloor == true && playerLocked == false)
@@ -367,6 +416,7 @@ public class PlayerMovement : MonoBehaviour
             Debug.Log("Navi running to the right");
             Navi3DAnimator.SetBool("NaviRunLeft", false);
             Navi3DAnimator.SetBool("NaviRunRight", true);
+            Navi3DAnimator.SetBool("NaviSpeed0", false);
         }
 
 
@@ -570,13 +620,40 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.UpArrow) == false && Input.GetKeyDown(KeyCode.DownArrow) == false && Input.GetKeyDown(KeyCode.LeftArrow) == false && Input.GetKeyDown(KeyCode.RightArrow) == false && playerLocked == true)
         {
-            PlayerSpeed = 0;
             Navi3DAnimator.SetBool("NaviDanceLEFT", false);
             Navi3DAnimator.SetBool("NaviDanceUP", false);
             Navi3DAnimator.SetBool("NaviDanceDOWN", false);
             Navi3DAnimator.SetBool("NaviDanceRIGHT", false);
             Navi3DAnimator.SetBool("NaviDanceANY", false);
         }
+
+        if (Input.GetKeyUp(KeyCode.W) == true && Input.GetKeyUp(KeyCode.S) == true && Input.GetKeyUp(KeyCode.A) == true && Input.GetKeyUp(KeyCode.D) == true)
+        {
+
+            Navi3DAnimator.SetBool("NaviRunLeft", false);
+            Navi3DAnimator.SetBool("NaviRunRight", false);
+
+        }
+
+        if (Input.GetKeyUp(KeyCode.W) == true && Input.GetKeyUp(KeyCode.S) == true && Input.GetKeyUp(KeyCode.A) == true && Input.GetKeyUp(KeyCode.D) == true && Input.GetKeyUp(KeyCode.RightShift) == true)
+        {
+
+            Navi3DAnimator.SetBool("NaviRunLeft", false);
+            Navi3DAnimator.SetBool("NaviRunRight", false);
+            Navi3DAnimator.SetBool("NaviSpeed0", true);
+
+        }
+
+
+
+        if (Input.GetKeyUp(KeyCode.RightShift) == true)
+        {
+            Navi3DAnimator.SetBool("DashAttackActive", false);
+            Navi3DAnimator.SetBool("DashRight", false);
+            Navi3DAnimator.SetBool("DashLeft", false);
+        }
+
+        
 
         if (Input.GetKeyDown(KeyCode.W) && pressedDash == false && playerLocked == false)
         {
@@ -587,11 +664,22 @@ public class PlayerMovement : MonoBehaviour
 
         }
 
-        if (Input.GetKeyDown(KeyCode.W) && pressedDash == false && playerLocked == false)
+        if (Input.GetKeyDown(KeyCode.A) && pressedDash == false && playerLocked == false && OnFloor == false)
         {
             //print("Character jumping");
            // PlayerRB.velocity = Vector2.up * DashSpeed;
-            Navi3DAnimator.SetBool("DashAttackActive", false);
+            Navi3DAnimator.SetBool("NaviFallLeft", true);
+            Navi3DAnimator.SetBool("NaviFallRight", false);
+            Navi3DAnimator.SetBool("NaviSpeed0", false);
+
+        }
+
+        if (Input.GetKeyDown(KeyCode.D) && pressedDash == false && playerLocked == false && OnFloor == false)
+        {
+            //print("Character jumping");
+            // PlayerRB.velocity = Vector2.up * DashSpeed;
+            Navi3DAnimator.SetBool("NaviFallLeft", false);
+            Navi3DAnimator.SetBool("NaviFallRight", true);
             Navi3DAnimator.SetBool("NaviSpeed0", false);
 
         }
