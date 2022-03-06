@@ -146,6 +146,7 @@ public class PlayerMovement : MonoBehaviour
         if (OnFloor == false)
         {
             Navi3DAnimator.SetBool("NaviOnGround", false);
+            Navi3DAnimator.SetBool("NaviSpeed0", false);
         }
 
 
@@ -479,7 +480,9 @@ public class PlayerMovement : MonoBehaviour
             Debug.Log("Navi running to the left");
             Navi3DAnimator.SetBool("NaviRunLeft", true);
             Navi3DAnimator.SetBool("NaviRunRight", false);
-           // Navi3DAnimator.SetBool("NaviSpeed0", false);
+            // Navi3DAnimator.SetBool("NaviSpeed0", false);
+            Navi3DAnimator.SetBool("FacingLeft", true);
+            Navi3DAnimator.SetBool("FacingRight", false) ;
         }
 
         if (Input.GetKeyDown(KeyCode.D) == true && pressedDash == false && OnFloor == true && playerLocked == false)
@@ -488,6 +491,8 @@ public class PlayerMovement : MonoBehaviour
             Navi3DAnimator.SetBool("NaviRunLeft", false);
             Navi3DAnimator.SetBool("NaviRunRight", true);
             //Navi3DAnimator.SetBool("NaviSpeed0", false);
+            Navi3DAnimator.SetBool("FacingRight", true);
+            Navi3DAnimator.SetBool("FacingLeft", false);
         }
 
 
@@ -537,6 +542,22 @@ public class PlayerMovement : MonoBehaviour
             print("Character cant jump");
 
 
+        }
+
+        //This code controls the player jumping left or right.
+
+        if (Input.GetKeyDown(KeyCode.W) && OnFloor == true && playerLocked == false && FacingLeft == true)
+        {
+            Navi3DAnimator.SetBool("NaviJumpLeft", true);
+            Navi3DAnimator.SetBool("NaviJumpRight", false);
+            Navi3DAnimator.SetBool("FacingLeft", true);
+        }
+
+        if (Input.GetKeyDown(KeyCode.W) && OnFloor == true && playerLocked == false && FacingRight == true)
+        {
+            Navi3DAnimator.SetBool("NaviJumpLeft", false);
+            Navi3DAnimator.SetBool("NaviJumpRight", true);
+            Navi3DAnimator.SetBool("FacingRight", true);
         }
 
         if (Input.GetKeyDown(KeyCode.W) && pressedDash == true && playerLocked == false)

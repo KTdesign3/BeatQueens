@@ -234,6 +234,9 @@ ModelImporter:
   - first:
       74: 3320017163622220517
     second: CTRL_Bones|Navi_UP_V01
+  - first:
+      74: 1429665282658732121
+    second: Navi_InAir_DOWN_RIGHT_FINISHED (1)
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -524,8 +527,8 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Navi_InAir_UP_LEFT_FINISHED
-      takeName: Navi_InAir_UP_LEFT_FINISHED
+      name: Navi_InAir_DOWN_RIGHT_FINISHED (1)
+      takeName: Navi_InAir_DOWN_RIGHT_FINISHED
       internalID: 0
       firstFrame: 0
       lastFrame: 19
