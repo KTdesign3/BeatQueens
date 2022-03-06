@@ -70,8 +70,8 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: NaviOnGround
     m_EventTreshold: 0
-  - m_ConditionMode: 1
-    m_ConditionEvent: NaviSpeed0
+  - m_ConditionMode: 2
+    m_ConditionEvent: NaviCombatANY
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 4186630923268297118}
@@ -312,6 +312,9 @@ AnimatorStateTransition:
     m_EventTreshold: 0
   - m_ConditionMode: 1
     m_ConditionEvent: NaviOnGround
+    m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: NaviSpeed0
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -7996830294204005366}
@@ -643,9 +646,6 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: NaviDanceDOWN
     m_EventTreshold: 0
-  - m_ConditionMode: 1
-    m_ConditionEvent: NaviDanceANY
-    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -3493384765253235562}
   m_Solo: 0
@@ -848,6 +848,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: NaviOnGround
     m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: NaviCombatANY
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 4186630923268297118}
   m_Solo: 0
@@ -907,9 +910,6 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: NaviDanceUP
     m_EventTreshold: 0
-  - m_ConditionMode: 1
-    m_ConditionEvent: NaviDanceANY
-    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -8772309948914789614}
   m_Solo: 0
@@ -935,14 +935,11 @@ AnimatorStateTransition:
   - m_ConditionMode: 2
     m_ConditionEvent: NaviDashRight
     m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: NaviDashLeft
-    m_EventTreshold: 0
   - m_ConditionMode: 1
     m_ConditionEvent: NaviOnGround
     m_EventTreshold: 0
-  - m_ConditionMode: 1
-    m_ConditionEvent: NaviSpeed0
+  - m_ConditionMode: 2
+    m_ConditionEvent: NaviCombatANY
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 4186630923268297118}
@@ -999,6 +996,9 @@ AnimatorStateTransition:
     m_EventTreshold: 0
   - m_ConditionMode: 1
     m_ConditionEvent: NaviRunLeft
+    m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: NaviSpeed0
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 4482494601525427430}
@@ -1139,9 +1139,6 @@ AnimatorStateTransition:
     m_EventTreshold: 0
   - m_ConditionMode: 1
     m_ConditionEvent: NaviDanceRIGHT
-    m_EventTreshold: 0
-  - m_ConditionMode: 1
-    m_ConditionEvent: NaviDanceANY
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -4482146697163530910}
@@ -1305,6 +1302,12 @@ AnimatorController:
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
   - m_Name: NaviFallUpRight
+    m_Type: 4
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
+  - m_Name: NaviCombatANY
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -1518,7 +1521,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: DashAttackActive
+    m_ConditionEvent: NaviDashLeft
     m_EventTreshold: 0
   - m_ConditionMode: 2
     m_ConditionEvent: NaviSpeed0
@@ -1669,6 +1672,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: NaviOnGround
     m_EventTreshold: 0
+  - m_ConditionMode: 1
+    m_ConditionEvent: NaviRunRight
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -7996830294204005366}
   m_Solo: 0
@@ -1774,8 +1780,8 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: NaviSpeed0
+  - m_ConditionMode: 2
+    m_ConditionEvent: NaviCombatANY
     m_EventTreshold: 0
   - m_ConditionMode: 1
     m_ConditionEvent: NaviOnGround
@@ -1802,11 +1808,14 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: NaviSpeed0
+  - m_ConditionMode: 2
+    m_ConditionEvent: NaviCombatANY
     m_EventTreshold: 0
   - m_ConditionMode: 1
     m_ConditionEvent: NaviOnGround
+    m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: NaviDanceLEFT
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 4186630923268297118}
@@ -2432,7 +2441,7 @@ AnimatorStateMachine:
     m_Position: {x: 70, y: -140, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -8772309948914789614}
-    m_Position: {x: 560, y: 200, z: 0}
+    m_Position: {x: 550, y: 230, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 5552046362868761280}
     m_Position: {x: 120, y: -480, z: 0}
@@ -2460,8 +2469,8 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: NaviSpeed0
+  - m_ConditionMode: 2
+    m_ConditionEvent: NaviCombatANY
     m_EventTreshold: 0
   - m_ConditionMode: 1
     m_ConditionEvent: NaviOnGround
@@ -2575,9 +2584,6 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: NaviDanceLEFT
     m_EventTreshold: 0
-  - m_ConditionMode: 1
-    m_ConditionEvent: NaviDanceANY
-    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 701591694071694738}
   m_Solo: 0
@@ -2603,8 +2609,8 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: NaviOnGround
     m_EventTreshold: 0
-  - m_ConditionMode: 1
-    m_ConditionEvent: NaviSpeed0
+  - m_ConditionMode: 2
+    m_ConditionEvent: NaviCombatANY
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 4186630923268297118}
