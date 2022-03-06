@@ -127,7 +127,7 @@ public class PlayerMovement : MonoBehaviour
 
         ////Stop the player from rotating Code////
         ///
-           GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotationX |  RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezePositionZ; //Players constraints are unfrozen
+           GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotationX |  RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezePositionZ; //Prevents the player from spinning wildly if they collide with an object.
         //////////DASHING CODE START ///////////////////
         ///
 
