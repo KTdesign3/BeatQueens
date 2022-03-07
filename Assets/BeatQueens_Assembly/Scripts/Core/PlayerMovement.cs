@@ -163,7 +163,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.RightShift) == true && FacingLeft == true && playerLocked == false)
         {
-           
+            FacingLeft = true;
             FacingRight = false;
             Navi3DAnimator.SetBool("NaviRunLeft", false);
             Navi3DAnimator.SetBool("NaviRunRight", false);
@@ -180,6 +180,8 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.RightShift) == true && FacingRight == true && playerLocked == false)
         {
 
+            //FacingLeft = false;
+            FacingRight = true;
             FacingLeft = false;
             Navi3DAnimator.SetBool("NaviRunLeft", false);
             Navi3DAnimator.SetBool("NaviRunRight", false);
@@ -193,7 +195,8 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.RightShift) == true && FacingLeft == true && playerLocked == false && Input.GetKeyDown(KeyCode.A) == true)
         {
 
-            FacingRight = false;
+            //FacingRight = false;
+            FacingLeft = true;
             Navi3DAnimator.SetBool("NaviRunLeft", false);
             Navi3DAnimator.SetBool("NaviRunRight", false);
             Navi3DAnimator.SetBool("NaviDashLeft", true);
@@ -209,24 +212,34 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.RightShift) == true && FacingRight == true && playerLocked == false && Input.GetKeyDown(KeyCode.A) == true)
         {
 
-            FacingLeft = false;
+            FacingLeft = true;
+            FacingRight = false;
             Navi3DAnimator.SetBool("NaviRunLeft", false);
             Navi3DAnimator.SetBool("NaviRunRight", false);
-            Navi3DAnimator.SetBool("NaviDashLeft", false);
-            Navi3DAnimator.SetBool("NaviDashRight", true);
+            Navi3DAnimator.SetBool("NaviDashLeft", true);
+            Navi3DAnimator.SetBool("NaviDashRight", false);
+            Navi3DAnimator.SetBool("NaviJumpLeft", false);
+            Navi3DAnimator.SetBool("NaviJumpRight", false);
+            Navi3DAnimator.SetBool("NaviFallLeft", false);
+            Navi3DAnimator.SetBool("NaviFallRight", true);
 
             Navi3DAnimator.SetBool("NaviSpeed0", false);
 
         }
 
-        if (Input.GetKeyDown(KeyCode.RightShift) == true && FacingRight == true && playerLocked == false && Input.GetKeyDown(KeyCode.D) == true)
+        if (Input.GetKeyDown(KeyCode.RightShift) == true && FacingLeft == true && playerLocked == false && Input.GetKeyDown(KeyCode.D) == true)
         {
 
             FacingLeft = false;
+            FacingRight = true;
             Navi3DAnimator.SetBool("NaviRunLeft", false);
             Navi3DAnimator.SetBool("NaviRunRight", false);
-            Navi3DAnimator.SetBool("NaviDashLeft", true);
-            Navi3DAnimator.SetBool("NaviDashRight", false);
+            Navi3DAnimator.SetBool("NaviDashLeft", false);
+            Navi3DAnimator.SetBool("NaviDashRight", true);
+            Navi3DAnimator.SetBool("NaviJumpLeft", false);
+            Navi3DAnimator.SetBool("NaviJumpRight", false);
+            Navi3DAnimator.SetBool("NaviFallLeft", true);
+            Navi3DAnimator.SetBool("NaviFallRight", false);
 
             Navi3DAnimator.SetBool("NaviSpeed0", false);
 
@@ -235,14 +248,19 @@ public class PlayerMovement : MonoBehaviour
 
         ////////// Controls character switching from dashing animation to jumping when the player released the right shift key
 
-        if (Input.GetKeyUp(KeyCode.RightShift) == true && FacingRight == true && OnFloor == true && playerLocked == false)
+        if (Input.GetKeyUp(KeyCode.RightShift) == true && FacingRight == true && playerLocked == false)
         {
 
+            FacingRight = true;
             FacingLeft = false;
+            Navi3DAnimator.SetBool("NaviFallLeft", false);
+            Navi3DAnimator.SetBool("NaviFallRight", true);
             Navi3DAnimator.SetBool("NaviRunLeft", false);
             Navi3DAnimator.SetBool("NaviRunRight", false);
             Navi3DAnimator.SetBool("NaviDashLeft", false);
-            Navi3DAnimator.SetBool("NaviJumpRight", true);
+            Navi3DAnimator.SetBool("NaviDashRight", false);
+            Navi3DAnimator.SetBool("NaviJumpRight", false);
+            Navi3DAnimator.SetBool("NaviJumpLeft", false);
 
             Navi3DAnimator.SetBool("NaviSpeed0", false);
 
@@ -250,12 +268,16 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKeyUp(KeyCode.RightShift) == true && FacingLeft == true && playerLocked == false)
         {
-
-            FacingLeft = false;
+            FacingRight = false;
+            FacingLeft = true;
+            Navi3DAnimator.SetBool("NaviFallLeft", true);
+            Navi3DAnimator.SetBool("NaviFallRight", false);
             Navi3DAnimator.SetBool("NaviRunLeft", false);
             Navi3DAnimator.SetBool("NaviRunRight", false);
-            Navi3DAnimator.SetBool("NaviJumpLeft", true);
             Navi3DAnimator.SetBool("NaviDashRight", false);
+            Navi3DAnimator.SetBool("NaviJumpRight", false);
+            Navi3DAnimator.SetBool("NaviJumpLeft", false);
+            
 
             Navi3DAnimator.SetBool("NaviSpeed0", false);
 
