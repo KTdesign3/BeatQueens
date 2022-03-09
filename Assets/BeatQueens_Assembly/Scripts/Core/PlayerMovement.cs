@@ -96,6 +96,13 @@ public class PlayerMovement : MonoBehaviour
             Destroy(collision.gameObject); //Destroys game onject you collided with
         }
 
+
+
+        if(PlayerRB.velocity.magnitude < 0.1f)
+        {
+            Navi3DAnimator.SetBool("NaviSpeed0", true);
+        }
+
         /*
 
         if (collision.gameObject.tag == "Enemy")
@@ -834,7 +841,7 @@ public class PlayerMovement : MonoBehaviour
             Navi3DAnimator.SetBool("NaviRunLeft", false);
             Navi3DAnimator.SetBool("NaviRunRight", false);
             Navi3DAnimator.SetBool("NaviSpeed0", true);
-            playerIsMoving = false;
+            //playerIsMoving = false;
 
         }
 
@@ -842,7 +849,7 @@ public class PlayerMovement : MonoBehaviour
         {
 
             Navi3DAnimator.SetBool("NaviSpeed0", false);
-            playerIsMoving = true;
+          //  playerIsMoving = true;
 
         }
 
@@ -855,7 +862,28 @@ public class PlayerMovement : MonoBehaviour
             Navi3DAnimator.SetBool("NaviDashLeft", false);
         }
 
-        
+        //Changes dash animation to fall animation if you release the shift key. 09/03/2022
+
+        if (Input.GetKeyUp(KeyCode.RightShift) == true && FacingLeft == true && OnFloor == false)
+        {
+            Navi3DAnimator.SetBool("DashAttackActive", false);
+            Navi3DAnimator.SetBool("NaviDashRight", false);
+            Navi3DAnimator.SetBool("NaviDashLeft", false);
+            Navi3DAnimator.SetBool("NaviJumpLeft", true);
+            Navi3DAnimator.SetBool("NaviJumpRight", false);
+        }
+
+
+        if (Input.GetKeyUp(KeyCode.RightShift) == true && FacingRight == true && OnFloor == false)
+        {
+            Navi3DAnimator.SetBool("DashAttackActive", false);
+            Navi3DAnimator.SetBool("NaviDashRight", false);
+            Navi3DAnimator.SetBool("NaviDashLeft", false);
+            Navi3DAnimator.SetBool("NaviJumpLeft", false);
+            Navi3DAnimator.SetBool("NaviJumpRight", true);
+        }
+
+
 
         if (Input.GetKeyDown(KeyCode.W) && pressedDash == false && playerLocked == false)
         {
@@ -905,7 +933,7 @@ public class PlayerMovement : MonoBehaviour
 
         }
 
-
+        /*
         if (playerIsMoving == false)
         {
             Navi3DAnimator.SetBool("NaviSpeed0", true);
@@ -925,7 +953,7 @@ public class PlayerMovement : MonoBehaviour
         {
             Navi3DAnimator.SetBool("NaviSpeed0", false);
 
-        }
+        } */
     }
 
     public void UnLockPlayer()
