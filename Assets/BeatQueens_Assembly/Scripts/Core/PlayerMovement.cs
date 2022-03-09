@@ -101,6 +101,10 @@ public class PlayerMovement : MonoBehaviour
         if(PlayerRB.velocity.magnitude < 0.1f)
         {
             Navi3DAnimator.SetBool("NaviSpeed0", true);
+            playerIsMoving = false;
+            Navi3DAnimator.SetBool("NaviRunRight", false);
+            Navi3DAnimator.SetBool("NaviRunLeft", false);
+            Debug.Log("Calling magnitude code line 101 playermovementscript");
         }
 
         /*
@@ -819,10 +823,29 @@ public class PlayerMovement : MonoBehaviour
             //Controls Navi running left and right stopping if the A key or the D key is released.
         }
 
+        //Added 09/03/2022. Makes Navi go back to idle animation.
+        if (Input.GetKeyUp(KeyCode.A) == true && OnFloor == true && dashLeft ==false && dashRight == false)
+        {
+
+            Navi3DAnimator.SetBool("NaviRunLeft", false);
+            Navi3DAnimator.SetBool("NaviSpeed0", true);
+            //Controls Navi running left and right stopping if the A key or the D key is released.
+        }
+
         if (Input.GetKeyUp(KeyCode.D) == true)
         {
 
             Navi3DAnimator.SetBool("NaviRunRight", false);
+            //Controls Navi running left and right stopping if the A key or the D key is released.
+        }
+
+        //Added 09/03/2022. Makes Navi go back to idle animation.
+        if (Input.GetKeyUp(KeyCode.D) == true && OnFloor == true && dashLeft == false && dashRight == false)
+        {
+
+            Navi3DAnimator.SetBool("NaviRunLeft", false);
+            Navi3DAnimator.SetBool("NaviRunRight", false);
+            Navi3DAnimator.SetBool("NaviSpeed0", true);
             //Controls Navi running left and right stopping if the A key or the D key is released.
         }
 
