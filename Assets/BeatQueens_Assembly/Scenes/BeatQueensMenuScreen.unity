@@ -4517,8 +4517,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -386, y: 91}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -364.92242, y: 91}
+  m_SizeDelta: {x: 257.2868, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1371860250
 MonoBehaviour:
@@ -4540,9 +4540,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Build date: 28/02/2022 Febuary 2022
+  m_text: 'Build date: 10/03/2022
 
-    Release version: Alpha V 1.5
+    Release version: Alpha V 1.6
 
 '
   m_isRightToLeft: 0
