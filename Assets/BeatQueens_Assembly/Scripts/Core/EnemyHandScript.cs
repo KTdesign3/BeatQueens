@@ -100,9 +100,9 @@ public class EnemyHandScript : MonoBehaviour
     void Update()
     {
 
-        if (IdleTimeLeft > 0 && IdleActive == true)
+       // if (IdleTimeLeft > 0 && IdleActive == true)
         {
-
+            /*
             //Added by KS 14/01/2022
             EnemyDamageEnemyHandGO.SetActive(true);
 
@@ -114,7 +114,7 @@ public class EnemyHandScript : MonoBehaviour
             IdleTimerActive = true;
 
             //speed = 4f;
-            speed = 4;
+            speed = 4; */
 
             //Code that moves hand
 
@@ -135,7 +135,7 @@ public class EnemyHandScript : MonoBehaviour
             }
         }
 
-
+        /*
         //If the idle timer is less than 0 the idle timer is stopped and the hand attack code and timer is called.
 
         if (IdleTimeLeft < 0 && IdleTimerActive == true)
@@ -211,7 +211,7 @@ public class EnemyHandScript : MonoBehaviour
 
         }
 
-        /*
+        
 
         if(AttackActive == true)
         {
@@ -274,7 +274,7 @@ public class EnemyHandScript : MonoBehaviour
         EnemyHandActive = false;
     }
 
-
+    /*
     public void HandAttack()
     {
         //The below code makes the hand attack the gameobject with the target transform attached to it.
@@ -290,7 +290,7 @@ public class EnemyHandScript : MonoBehaviour
         
        
 
-    }
+    } 
 
     public void SetIdleTime()
     {
@@ -333,7 +333,7 @@ public class EnemyHandScript : MonoBehaviour
         PauseActive = false;
         AttackActive = true;
         //speed = 10f;
-    }
+    } */
 
     public void ResetHandPos()
     {

@@ -23,7 +23,7 @@ public class EnemyHandHurtPlayerScript : MonoBehaviour
 
 
 
-
+    /*
 
     private void OnTriggerEnter(Collider other)
     {
@@ -39,5 +39,5 @@ public class EnemyHandHurtPlayerScript : MonoBehaviour
 
         }
 
-    }
+    } */
 }
