@@ -15,7 +15,7 @@ public class EnemyHandScript : MonoBehaviour
 
 
     //New Code
-    public GameObject EnemyDamagePlayerGO;
+
     public GameObject EnemyDamageEnemyHandGO;
 
     //Corountine hand injure script
@@ -40,7 +40,6 @@ public class EnemyHandScript : MonoBehaviour
 
     public Transform EnemyTarget;
     public Transform EnemyHandTransform;
-    public bool EnemyAttackingPlayer;
 
 
     //Code related  to hand attack timer
@@ -68,14 +67,14 @@ public class EnemyHandScript : MonoBehaviour
     {
         transform.position = new Vector3(-4, 1, -1.3f);
         //transform.position = EnemyHandPos;
-        EnemyAttackingPlayer = false;
+        //EnemyAttackingPlayer = false;
         EnemyHandActive = true;
         HandAttackTimerActive = false;
         IdleActive = true;
 
 
         //Added 14/01/2022
-        EnemyDamagePlayerGO.SetActive(false);
+       // EnemyDamagePlayerGO.SetActive(false);
         EnemyDamageEnemyHandGO.SetActive(true);
 
     }

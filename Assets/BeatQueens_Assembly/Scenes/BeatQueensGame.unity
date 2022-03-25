@@ -2165,65 +2165,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc75990e2b656544db5ce6a3b0f256c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &208893467
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 208893468}
-  - component: {fileID: 208893469}
-  - component: {fileID: 208893470}
-  m_Layer: 0
-  m_Name: EnemyHandDamagePlayerGO
-  m_TagString: EnemyHandHurtPlayer
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &208893468
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 208893467}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.02, y: 0.261, z: 0.036}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 310146097}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &208893469
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 208893467}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.04, y: 1.69, z: 0.69}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &208893470
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 208893467}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b95afe8105b59a746a5dce0ab5feb71b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlayerDamage: {fileID: 1408802724}
-  Navi: {fileID: 1408802724}
 --- !u!1 &217936367
 GameObject:
   m_ObjectHideFlags: 0
@@ -3143,12 +3084,11 @@ GameObject:
   - component: {fileID: 310146097}
   - component: {fileID: 310146098}
   - component: {fileID: 310146099}
-  - component: {fileID: 310146100}
   - component: {fileID: 310146101}
-  - component: {fileID: 310146102}
+  - component: {fileID: 310146100}
   m_Layer: 0
   m_Name: EnemyHand
-  m_TagString: Enemy
+  m_TagString: PlayerDamage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3161,11 +3101,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 310146096}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.82, y: 0.34, z: -1.3}
+  m_LocalPosition: {x: 0, y: 0, z: -1.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 208893468}
-  - {fileID: 1706881731}
+  - {fileID: 744797776}
   - {fileID: 1732185005}
   m_Father: {fileID: 2109673476}
   m_RootOrder: 39
@@ -3211,25 +3150,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ff36a6459033514dbd218685aaa30fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
-  EnemyHandGO: {fileID: 919132149155446097, guid: 78fb6fc141cb7ae41ac71fd1081a5220,
-    type: 3}
+  speed: 2
+  EnemyHandGO: {fileID: 310146096}
   EnemyHandActive: 0
-  Boundary: {fileID: 217936367}
+  Boundary: {fileID: 1125673106}
   PlayerDamage: {fileID: 696848639}
-  EnemyDamagePlayerGO: {fileID: 208893467}
-  EnemyDamageEnemyHandGO: {fileID: 1706881730}
+  EnemyDamageEnemyHandGO: {fileID: 744797775}
   EnemyHurtTime: 0
   startTime: 5
-  PauseTimeLeft: 5
+  PauseTimeLeft: 2
   PauseTimerActive: 0
   PauseActive: 0
   IdleTimeLeft: 5
   IdleTimerActive: 0
   EnemyTarget: {fileID: 841790336}
-  EnemyHandTransform: {fileID: 310146097}
-  EnemyAttackingPlayer: 0
-  HandAttackTimeLeft: 5
+  EnemyHandTransform: {fileID: 0}
+  HandAttackTimeLeft: 3
   HandAttackTimerActive: 0
   handMat: {fileID: 2100000, guid: a76cefda796e8a1499998c2b2a6b4e69, type: 2}
   EnemyHandPos: {fileID: 1741841431}
@@ -3244,30 +3180,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 310146096}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af48f93127c833c4380b428edb274eea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  injuryMat: {fileID: 2100000, guid: 0fce798f3efafed44a43af2c4d2431c0, type: 2}
-  handMat: {fileID: 2100000, guid: a76cefda796e8a1499998c2b2a6b4e69, type: 2}
-  InjuryTimeLeft: 0.001
-  InjuryTimerActive: 0
-  InjuryMade: 0
-  EnemyHand: {fileID: 310146096}
---- !u!114 &310146102
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 310146096}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5664d08403110314f8c287a7205d1e18, type: 3}
+  m_Script: {fileID: 11500000, guid: b95afe8105b59a746a5dce0ab5feb71b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerDamage: {fileID: 696848639}
   Navi: {fileID: 1408802724}
-  EnemyHand: {fileID: 310146096}
 --- !u!1 &312847017
 GameObject:
   m_ObjectHideFlags: 0
@@ -10320,7 +10237,6 @@ GameObject:
   m_Component:
   - component: {fileID: 696848640}
   - component: {fileID: 696848641}
-  - component: {fileID: 696848642}
   m_Layer: 0
   m_Name: PlayerDamage
   m_TagString: PlayerDamage
@@ -10355,20 +10271,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.96, y: 1.42, z: 1.04}
   m_Center: {x: 0, y: 0.06, z: 0}
---- !u!114 &696848642
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 696848639}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee07f8a2ea9348246a4e1e7387a91364, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlayerVulnerable: 0
-  PlayerDamageObject: {fileID: 696848639}
 --- !u!1001 &696908988
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10666,6 +10568,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 738544101}
   m_CullTransparentMesh: 0
+--- !u!1 &744797775
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 744797776}
+  - component: {fileID: 744797777}
+  m_Layer: 0
+  m_Name: EnemyHandDamage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &744797776
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 744797775}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.321, y: 0.357, z: -0.12}
+  m_LocalScale: {x: 2.2984512, y: 2.0919948, z: 1}
+  m_Children: []
+  m_Father: {fileID: 310146097}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &744797777
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 744797775}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &754352166
 GameObject:
   m_ObjectHideFlags: 0
@@ -17597,7 +17544,7 @@ GameObject:
   - component: {fileID: 1408802731}
   - component: {fileID: 1408802733}
   - component: {fileID: 1408802734}
-  - component: {fileID: 1408802735}
+  - component: {fileID: 1408802736}
   m_Layer: 0
   m_Name: Navi
   m_TagString: Player
@@ -17846,7 +17793,7 @@ MonoBehaviour:
   PlayerJumpSpeed: 12
   OnFloor: 0
   PlayerRB: {fileID: 1408802730}
---- !u!114 &1408802735
+--- !u!114 &1408802736
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -17855,18 +17802,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1408802724}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa6660d61e152c64c9bbc9eaf9aa3153, type: 3}
+  m_Script: {fileID: 11500000, guid: ee07f8a2ea9348246a4e1e7387a91364, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  injuryMat: {fileID: 2100000, guid: 0fce798f3efafed44a43af2c4d2431c0, type: 2}
-  NaviplayerMat:
-  - {fileID: 2100000, guid: 09a8f4992d2540f4d9f5ec6ec548c5eb, type: 2}
-  - {fileID: 2100000, guid: 0fce798f3efafed44a43af2c4d2431c0, type: 2}
-  InjuryTimeLeft: 0.001
-  InjuryTimerActive: 0
-  InjuryMade: 0
-  Player: {fileID: 1408802724}
-  x: 0
+  PlayerVulnerable: 0
+  PlayerDamageObject: {fileID: 696848639}
 --- !u!1 &1448363166 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 472594496161423042, guid: fbdec3624e6c74b46b8734a580634e09,
@@ -20712,66 +20652,6 @@ Transform:
   m_Father: {fileID: 2109673476}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1706881730
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1706881731}
-  - component: {fileID: 1706881732}
-  - component: {fileID: 1706881733}
-  m_Layer: 0
-  m_Name: EnemyHandDamageHandGO
-  m_TagString: EnemyHandHurtEnemy
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1706881731
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1706881730}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.02, y: 0.261, z: 0.036}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 310146097}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1706881732
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1706881730}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.04, y: 1.69, z: 0.69}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1706881733
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1706881730}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5664d08403110314f8c287a7205d1e18, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlayerDamage: {fileID: 696848639}
-  Navi: {fileID: 1408802724}
-  EnemyHand: {fileID: 1840278185}
 --- !u!1 &1707381262
 GameObject:
   m_ObjectHideFlags: 0
@@ -21172,7 +21052,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 78fb6fc141cb7ae41ac71fd1081a5220,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 78fb6fc141cb7ae41ac71fd1081a5220,
         type: 3}
