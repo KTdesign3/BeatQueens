@@ -20,6 +20,7 @@ TagManager:
   - PelletSpawner
   - EnemyHandHurtPlayer
   - EnemyHandHurtEnemy
+  - Tracks
   layers:
   - Default
   - TransparentFX
