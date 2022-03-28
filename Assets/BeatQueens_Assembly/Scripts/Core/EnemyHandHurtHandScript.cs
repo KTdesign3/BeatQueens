@@ -28,10 +28,10 @@ public class EnemyHandHurtHandScript : MonoBehaviour
         if (other.gameObject.tag == "PlayerDamage")
         {
 
-            Debug.Log("Hand hit the player in EnemyHandHurtHandScript, deducting points from enemy hand");
+            Debug.Log("Player dashed into EnemyHandHurtHandScript, deducting points from enemy hand");
             
             //Deduct 50 points from the enemy score.
-            EnemyScoreScript.EnemyScoreValue -= 50;
+            //EnemyScoreScript.EnemyScoreValue -= 50;
             //HurtColorChangeScript.Injury();
 
             //Added by KS 14/01/2022

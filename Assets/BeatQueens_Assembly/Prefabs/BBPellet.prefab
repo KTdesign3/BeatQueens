@@ -128,5 +128,5 @@ MonoBehaviour:
   PelletTimeLeft: 5
   TimerActive: 0
   PelletMade: 0
-  Pellet: {fileID: 5189228656106079435, guid: 9deef48ab64823c4dba7e6a3cc2547f1, type: 3}
+  Pellet: {fileID: 6876027047282094448}
   BBPellet: {fileID: 6876027047282094448}

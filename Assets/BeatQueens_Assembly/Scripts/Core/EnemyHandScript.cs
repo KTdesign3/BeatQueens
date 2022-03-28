@@ -359,6 +359,16 @@ public class EnemyHandScript : MonoBehaviour
 
         }
 
+
+        if (other.gameObject.tag == "PlayerDamage")
+        {
+            Debug.Log("Player dashed into EnemyHandScript, deducting points from enemy hand");
+            EnemyScoreScript.EnemyScoreValue -= 50;
+
+        }
+
+        
+
         /*
         if (other.gameObject.tag == "PlayerDamage" && AttackActive == true)
         {

@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 5189228656106079434}
   - component: {fileID: 5189228656106079438}
   - component: {fileID: -6670435035768287142}
-  - component: {fileID: 481659867803985069}
   m_Layer: 0
   m_Name: Pellet
   m_TagString: PelletSpawner
@@ -113,9 +112,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberOfProjectiles: 4
   projectileSpeed: 5
-  ProjectilePrefab: {fileID: 5566363965867047940, guid: 9b875e8ea172c4a4f8385bb88c3d931b,
+  ProjectilePrefab: {fileID: 6876027047282094448, guid: 3833aa2756e24724a98aff5b537a3c82,
     type: 3}
-  PelletSpawnerActive: 1
+  PelletSpawnerActive: 0
   CurrentPelletTime: 2
   PelletTimeLeft: 2
   FirePelletTimerActive: 1
@@ -134,21 +133,4 @@ MonoBehaviour:
   PelletBigTimeLeft: 3
   PelletBigTimerActive: 0
   PelletBigTimerMade: 0
---- !u!114 &481659867803985069
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5189228656106079435}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3a76ec8f644ab943b8cf96bcc29e5f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PelletTimeLeft: 3
-  TimerActive: 0
-  PelletMade: 0
   Pellet: {fileID: 5189228656106079435}
-  BBPellet: {fileID: 5566363965867047940, guid: 9b875e8ea172c4a4f8385bb88c3d931b,
-    type: 3}
