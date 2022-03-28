@@ -12,7 +12,7 @@ public class CountdownScript : MonoBehaviour
     [SerializeField] TextMeshProUGUI timerText1;
     //[SerializeField] TextMeshProUGUI timerText2;
     public float timer1 = 195f;
-    public GameObject EnemyHand;
+    public GameObject EnemyHeart;
     public GameObject AttackSpawnerGO;
     public GameObject Navi;
     public GameObject PlayerTeleportGO;
@@ -26,6 +26,7 @@ public class CountdownScript : MonoBehaviour
     public GameObject RedQueenGO;
     public GameObject EnemyHandGO;
     public GameObject PlayerScoreGO;
+    public GameObject TracksGO;
     [SerializeField] GameObject EnemyScoreTest;
     public float Dance1 = 196f;
     public float Combat1 = 132f;
@@ -69,6 +70,7 @@ public class CountdownScript : MonoBehaviour
         //Added by KS 13/01/2022
         //Hides 'song finished!' text when you start a new song.
         EndText.SetActive(false);
+        TracksGO.SetActive(true);
         ResetScore();
     }
 
@@ -90,12 +92,13 @@ public class CountdownScript : MonoBehaviour
 
     public void GameHasEnded()
     {
-        EnemyHand.SetActive(false); //Spawns enemy hand on EnemyHandGO;
+        EnemyHeart.SetActive(false); //Spawns enemy hand on EnemyHandGO;
         AttackSpawnerGO.SetActive(false); //Spawns enemy attacks in AttackSpawnerScript
         Navi.GetComponent<PlayerMovement>().DanceActive(); //Controls player being frozen or not
         PlayerTeleportGO.GetComponent<PlayerTeleportScript>().TeleportPlayer(); //Calls on PlayerTeleportScript to teleport the player
         CombatText.SetActive(false);
         EndText.SetActive(true);
+        TracksGO.SetActive(false);
         Bullet.GetComponent<MoveBulletScript>().BulletsStop();
         Pellet.GetComponent<RadialAttackScript>().PelletStop();
         Navi.GetComponent<PlayerMovement>().LockPlayer();
@@ -169,6 +172,7 @@ public class CountdownScript : MonoBehaviour
             Debug.Log("Queens score is rising");
             //KS Added
             RedQueenGO.GetComponent<RedQueenScript>().DanceStart();
+            //TracksGO.SetActive(true);
 
 
         }
@@ -178,14 +182,15 @@ public class CountdownScript : MonoBehaviour
         {
             DanceText.SetActive(true);
             Debug.Log("Dance 1 mode active ");
-           
+            TracksGO.SetActive(true);
+
         }
 
         if (timer1 > 100 && timer1 <= 126) //Set to 132 for beat drop
         {
             
             Debug.Log("Combat 1 mode active ");
-            EnemyHand.SetActive(true);
+            EnemyHeart.SetActive(true);
             AttackSpawnerGO.SetActive(true);
             Navi.GetComponent<PlayerMovement>().CombatActive();
             CombatText.SetActive(true);
@@ -195,6 +200,7 @@ public class CountdownScript : MonoBehaviour
             Navi.GetComponent<PlayerMovement>().UnLockPlayer();
             AttackSpawnerGO.GetComponent<AttackSpawnerScript>().SpawnAllowCall();
             RedQueenGO.GetComponent<RedQueenScript>().DanceStop();
+            TracksGO.SetActive(false);
 
 
         }
@@ -205,7 +211,7 @@ public class CountdownScript : MonoBehaviour
         {
             
             Debug.Log("Dance mode 2 active ");
-            EnemyHand.SetActive(false); //Spawns enemy hand on EnemyHandGO;
+            EnemyHeart.SetActive(false); //Spawns enemy hand on EnemyHandGO;
             AttackSpawnerGO.SetActive(false); //Spawns enemy attacks in AttackSpawnerScript
             Navi.GetComponent<PlayerMovement>().DanceActive(); //Controls player being frozen or not
             PlayerTeleportGO.GetComponent<PlayerTeleportScript>().TeleportPlayer(); //Calls on PlayerTeleportScript to teleport the player
@@ -216,6 +222,7 @@ public class CountdownScript : MonoBehaviour
             Navi.GetComponent<PlayerMovement>().LockPlayer();
             AttackSpawnerGO.GetComponent<AttackSpawnerScript>().SpawnAllowCallStop();
             RedQueenGO.GetComponent<RedQueenScript>().DanceStart();
+            TracksGO.SetActive(true);
 
         }
 
@@ -229,7 +236,7 @@ public class CountdownScript : MonoBehaviour
         {
             //ScoreCounterGO.GetComponent<GameWinScript>().CheckAllScores(); //Calls ob ScoreManagerGO to check player and queens scores
             Debug.Log("Combat mode 2 active");
-            EnemyHand.SetActive(true);
+            EnemyHeart.SetActive(true);
             AttackSpawnerGO.SetActive(true);
             Navi.GetComponent<PlayerMovement>().CombatActive();
             CombatText.SetActive(true);
@@ -241,6 +248,7 @@ public class CountdownScript : MonoBehaviour
             //ScoreCounterGO.GetComponent<GameWinScript>().CheckAllScores();
             Debug.Log("Score compare ");
             RedQueenGO.GetComponent<RedQueenScript>().DanceStop();
+            TracksGO.SetActive(false);
 
         }
 
