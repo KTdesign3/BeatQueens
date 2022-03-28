@@ -43,7 +43,7 @@ public class RedQueenScript : MonoBehaviour
             ScoreTimer += Time.deltaTime;
             if (ScoreTimer >= 2) //This will add 5 to
             {
-                EnemyScoreScript.EnemyScoreValue += 1000;
+                EnemyScoreScript.EnemyScoreValue +=437;
                 Debug.Log("Time left");
                 ScoreTimer = 0;
             }
