@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: c970f45da4a181f40bf6a27d85b77680
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Matamata
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: c571d3e8603d4a141ad968fb4d383a68, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
