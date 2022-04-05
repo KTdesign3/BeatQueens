@@ -27,6 +27,7 @@ public class CountdownScript : MonoBehaviour
     public GameObject EnemyHandGO;
     public GameObject PlayerScoreGO;
     public GameObject TracksGO;
+    public GameObject curtainGO; //This is the curtain game object that separates the queen and Navi.
     [SerializeField] GameObject EnemyScoreTest;
     public float Dance1 = 196f;
     public float Combat1 = 132f;
@@ -201,6 +202,7 @@ public class CountdownScript : MonoBehaviour
             AttackSpawnerGO.GetComponent<AttackSpawnerScript>().SpawnAllowCall();
             RedQueenGO.GetComponent<RedQueenScript>().DanceStop();
             TracksGO.SetActive(false);
+            curtainGO.GetComponent<CurtainRaiseScript>().CurtainRaise(); //Raises curtain
 
 
         }
@@ -223,6 +225,7 @@ public class CountdownScript : MonoBehaviour
             AttackSpawnerGO.GetComponent<AttackSpawnerScript>().SpawnAllowCallStop();
             RedQueenGO.GetComponent<RedQueenScript>().DanceStart();
             TracksGO.SetActive(true);
+            curtainGO.GetComponent<CurtainRaiseScript>().CurtainLower(); //Raises curtain
 
         }
 
@@ -249,6 +252,7 @@ public class CountdownScript : MonoBehaviour
             Debug.Log("Score compare ");
             RedQueenGO.GetComponent<RedQueenScript>().DanceStop();
             TracksGO.SetActive(false);
+            curtainGO.GetComponent<CurtainRaiseScript>().CurtainRaise(); //Raises curtain
 
         }
 
