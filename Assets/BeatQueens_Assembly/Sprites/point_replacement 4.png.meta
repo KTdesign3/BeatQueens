@@ -1,0 +1,1404 @@
+fileFormatVersion: 2
+guid: a49e2c8a40b7070468b4b32ccb311f71
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1682916582964650543
+    second: point_replacement 4_0
+  - first:
+      213: 1880364997082995810
+    second: point_replacement 4_1
+  - first:
+      213: 2526591967032792309
+    second: point_replacement 4_2
+  - first:
+      213: -8036050168058865825
+    second: point_replacement 4_3
+  - first:
+      213: 3559462300434054142
+    second: point_replacement 4_4
+  - first:
+      213: -5837774940676235312
+    second: point_replacement 4_5
+  - first:
+      213: 951561313874844732
+    second: point_replacement 4_6
+  - first:
+      213: -89833028576874871
+    second: point_replacement 4_7
+  - first:
+      213: 3257313145300055982
+    second: point_replacement 4_8
+  - first:
+      213: 4508914871623360775
+    second: point_replacement 4_9
+  - first:
+      213: 4345490986775109560
+    second: point_replacement 4_10
+  - first:
+      213: 1874283353154866815
+    second: point_replacement 4_11
+  - first:
+      213: -6186736967247611708
+    second: point_replacement 4_12
+  - first:
+      213: -4741985692295623727
+    second: point_replacement 4_13
+  - first:
+      213: -535153225029972540
+    second: point_replacement 4_14
+  - first:
+      213: 416760718783721150
+    second: point_replacement 4_15
+  - first:
+      213: 6538586860325553979
+    second: point_replacement 4_16
+  - first:
+      213: -7494324916020033202
+    second: point_replacement 4_17
+  - first:
+      213: -6216724550569779240
+    second: point_replacement 4_18
+  - first:
+      213: 4034480369992534273
+    second: point_replacement 4_19
+  - first:
+      213: 4091233562367733096
+    second: point_replacement 4_20
+  - first:
+      213: 5869143743740695835
+    second: point_replacement 4_21
+  - first:
+      213: -7683234965115224523
+    second: point_replacement 4_22
+  - first:
+      213: -9040910236764492415
+    second: point_replacement 4_23
+  - first:
+      213: -570320545259617558
+    second: point_replacement 4_24
+  - first:
+      213: -2869851304771288169
+    second: point_replacement 4_25
+  - first:
+      213: 4487734233391776915
+    second: point_replacement 4_26
+  - first:
+      213: -8442277675443684889
+    second: point_replacement 4_27
+  - first:
+      213: -3295609647482622048
+    second: point_replacement 4_28
+  - first:
+      213: -3954450859029741209
+    second: point_replacement 4_29
+  - first:
+      213: -3233081634905343559
+    second: point_replacement 4_30
+  - first:
+      213: -1663903655311361441
+    second: point_replacement 4_31
+  - first:
+      213: 3292580056599611620
+    second: point_replacement 4_32
+  - first:
+      213: -2954647607253917748
+    second: point_replacement 4_33
+  - first:
+      213: 1990222198508063052
+    second: point_replacement 4_34
+  - first:
+      213: -6682902158461571115
+    second: point_replacement 4_35
+  - first:
+      213: -1457460224464060791
+    second: point_replacement 4_36
+  - first:
+      213: -4040497841418432415
+    second: point_replacement 4_37
+  - first:
+      213: -816502057724497983
+    second: point_replacement 4_38
+  - first:
+      213: -6104769523225049233
+    second: point_replacement 4_39
+  - first:
+      213: -5747320475628124311
+    second: point_replacement 4_40
+  - first:
+      213: -418638359084923146
+    second: point_replacement 4_41
+  - first:
+      213: 745234285701072419
+    second: point_replacement 4_42
+  - first:
+      213: 254141958291678627
+    second: point_replacement 4_43
+  - first:
+      213: -6631403610947375108
+    second: point_replacement 4_44
+  - first:
+      213: 5413653919111521172
+    second: point_replacement 4_45
+  - first:
+      213: 8308769510473772756
+    second: point_replacement 4_46
+  - first:
+      213: 5302894163382268527
+    second: point_replacement 4_47
+  - first:
+      213: 6303743515274821388
+    second: point_replacement 4_48
+  - first:
+      213: 1995257650409119299
+    second: point_replacement 4_49
+  - first:
+      213: 531487997271356816
+    second: point_replacement 4_50
+  - first:
+      213: -6630794625618211453
+    second: point_replacement 4_51
+  - first:
+      213: 48269747532084419
+    second: point_replacement 4_52
+  - first:
+      213: -5080713595924887031
+    second: point_replacement 4_53
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: point_replacement 4_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 907
+        width: 110
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f22e83a37bbea5710800000000000000
+      internalID: 1682916582964650543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: point_replacement 4_1
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 907
+        width: 110
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26cd5339006681a10800000000000000
+      internalID: 1880364997082995810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: point_replacement 4_2
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 907
+        width: 110
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f4585fe102401320800000000000000
+      internalID: 2526591967032792309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: point_replacement 4_3
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 907
+        width: 110
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5712afe2f63a7090800000000000000
+      internalID: -8036050168058865825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: point_replacement 4_4
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 904
+        width: 110
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efb34c87a10c56130800000000000000
+      internalID: 3559462300434054142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: point_replacement 4_5
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 904
+        width: 110
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dfd05e0f9e0cfea0800000000000000
+      internalID: -5837774940676235312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: point_replacement 4_6
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 904
+        width: 110
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3c938f29ff943d00800000000000000
+      internalID: 951561313874844732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: point_replacement 4_7
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 780
+        width: 110
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98ee3922659d0cef0800000000000000
+      internalID: -89833028576874871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: point_replacement 4_8
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 780
+        width: 110
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea7f1d33c0d443d20800000000000000
+      internalID: 3257313145300055982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: point_replacement 4_9
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 780
+        width: 110
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 701269dbf22e29e30800000000000000
+      internalID: 4508914871623360775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: point_replacement 4_10
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 780
+        width: 110
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bf546177094e4c30800000000000000
+      internalID: 4345490986775109560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: point_replacement 4_11
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 780
+        width: 110
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7e493187cac20a10800000000000000
+      internalID: 1874283353154866815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: point_replacement 4_12
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 781
+        width: 110
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c8bd6cc18b442aa0800000000000000
+      internalID: -6186736967247611708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: point_replacement 4_13
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 781
+        width: 110
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1db0cb01325113eb0800000000000000
+      internalID: -4741985692295623727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: point_replacement 4_14
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 663
+        width: 329
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cd0fa92af0c298f0800000000000000
+      internalID: -535153225029972540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: point_replacement 4_15
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 658
+        width: 110
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebea0776aa1a8c500800000000000000
+      internalID: 416760718783721150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: point_replacement 4_16
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 658
+        width: 110
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b37cdb64b1abdba50800000000000000
+      internalID: 6538586860325553979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: point_replacement 4_17
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 658
+        width: 110
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e49444d023fcef790800000000000000
+      internalID: -7494324916020033202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: point_replacement 4_18
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 658
+        width: 110
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8df96d875f1c9b9a0800000000000000
+      internalID: -6216724550569779240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: point_replacement 4_19
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 556
+        width: 340
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10901ba558a5df730800000000000000
+      internalID: 4034480369992534273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: point_replacement 4_20
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 535
+        width: 110
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86da51aaf3bf6c830800000000000000
+      internalID: 4091233562367733096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: point_replacement 4_21
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 535
+        width: 110
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b15de5d8323637150800000000000000
+      internalID: 5869143743740695835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: point_replacement 4_22
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 535
+        width: 110
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53e327ab18aaf5590800000000000000
+      internalID: -7683234965115224523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: point_replacement 4_23
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 535
+        width: 110
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18da57b5a0c388280800000000000000
+      internalID: -9040910236764492415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: point_replacement 4_24
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 535
+        width: 109
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae281bb5c70d518f0800000000000000
+      internalID: -570320545259617558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: point_replacement 4_25
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 456
+        width: 340
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7938ae4817d3c28d0800000000000000
+      internalID: -2869851304771288169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: point_replacement 4_26
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 414
+        width: 110
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3944dab1282a74e30800000000000000
+      internalID: 4487734233391776915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: point_replacement 4_27
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 415
+        width: 110
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e9f7fbee2107da80800000000000000
+      internalID: -8442277675443684889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: point_replacement 4_28
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 416
+        width: 110
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0afa27b8c74a342d0800000000000000
+      internalID: -3295609647482622048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: point_replacement 4_29
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 417
+        width: 110
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7614bc135e7fe19c0800000000000000
+      internalID: -3954450859029741209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: point_replacement 4_30
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 389
+        width: 109
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b9b0a5f169c123d0800000000000000
+      internalID: -3233081634905343559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: point_replacement 4_31
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 346
+        width: 340
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5a31b4f070a8e8e0800000000000000
+      internalID: -1663903655311361441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: point_replacement 4_32
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 296
+        width: 110
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e8c72cdd1891bd20800000000000000
+      internalID: 3292580056599611620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: point_replacement 4_33
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 297
+        width: 110
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccf1c25d7abfef6d0800000000000000
+      internalID: -2954647607253917748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: point_replacement 4_34
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 298
+        width: 110
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c498b2e7b80be9b10800000000000000
+      internalID: 1990222198508063052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: point_replacement 4_35
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 299
+        width: 110
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dfe438f4ef8143a0800000000000000
+      internalID: -6682902158461571115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: point_replacement 4_36
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 271
+        width: 109
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98efe86d5af06cbe0800000000000000
+      internalID: -1457460224464060791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: point_replacement 4_37
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 246
+        width: 340
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1609586ee944de7c0800000000000000
+      internalID: -4040497841418432415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: point_replacement 4_38
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 170
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cfa4fa54b33ba4f0800000000000000
+      internalID: -816502057724497983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: point_replacement 4_39
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 170
+        width: 165
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f674a8c8670874ba0800000000000000
+      internalID: -6104769523225049233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: point_replacement 4_40
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 187
+        width: 57
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9674bdf5a7a6d30b0800000000000000
+      internalID: -5747320475628124311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: point_replacement 4_41
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 170
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f6046561a2b03af0800000000000000
+      internalID: -418638359084923146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: point_replacement 4_42
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 170
+        width: 162
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32687a962aa975a00800000000000000
+      internalID: 745234285701072419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: point_replacement 4_43
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 187
+        width: 57
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a56f7ab3c4e68300800000000000000
+      internalID: 254141958291678627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: point_replacement 4_44
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 150
+        width: 109
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cff2d3fec8588f3a0800000000000000
+      internalID: -6631403610947375108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: point_replacement 4_45
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 142
+        width: 340
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4932b818e89212b40800000000000000
+      internalID: 5413653919111521172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: point_replacement 4_46
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 37
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dea26819ddae4370800000000000000
+      internalID: 8308769510473772756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: point_replacement 4_47
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 37
+        width: 165
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6274e9452aa79940800000000000000
+      internalID: 5302894163382268527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: point_replacement 4_48
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 37
+        width: 164
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0fb02714556b7750800000000000000
+      internalID: 6303743515274821388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: point_replacement 4_49
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 37
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34e1400034490bb10800000000000000
+      internalID: 1995257650409119299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: point_replacement 4_50
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 17
+        width: 340
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0953ebf7489306700800000000000000
+      internalID: 531487997271356816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: point_replacement 4_51
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 54
+        width: 57
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38d05716b6faaf3a0800000000000000
+      internalID: -6630794625618211453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: point_replacement 4_52
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 54
+        width: 57
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c43c03641d7ba000800000000000000
+      internalID: 48269747532084419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: point_replacement 4_53
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 32
+        width: 109
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90a466d37edad79b0800000000000000
+      internalID: -5080713595924887031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
