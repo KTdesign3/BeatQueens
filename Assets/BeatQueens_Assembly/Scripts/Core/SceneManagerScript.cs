@@ -15,6 +15,17 @@ public class SceneManagerScript : MonoBehaviour
     }
     public void Update()
     {
+
+        /*
+        if (Input.GetKeyDown(KeyCode.P) || Input.GetKeyDown(KeyCode.Escape))
+        {
+            {
+                Application.Quit(); //Quits the game if you hit the escape key.
+            }
+
+        } */
+
+
         /*
 
         if (Input.GetKeyDown(KeyCode.P) || Input.GetKeyDown(KeyCode.Escape))
