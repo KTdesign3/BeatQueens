@@ -8,7 +8,7 @@ public class CurtainRaiseScript : MonoBehaviour
     public bool curtainPull;
     public Transform CurtainUpPOS;
     public Transform CurtainDownPOS;
-    public float speed = 4f;
+    public float speed = 0f;
 
     // Start is called before the first frame update
     void Start()
@@ -19,35 +19,43 @@ public class CurtainRaiseScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (curtainPull == true)
+        {
+            speed = 4;
+        }
+        if (curtainPull == false)
+        {
+            speed = 0;
+        }
+
     }
 
 
     public void CurtainRaise()
     {
-        speed = 4;
-
-
         //If this is called raise the curtain and keep it held up.
         transform.Translate(Vector2.up * speed * Time.deltaTime);
-
-        if (transform.position.y >= 17.23f)
+        curtainPull = true;
+        if (transform.position.y >= 11f)
         {
             speed = 0;
+            curtainPull = false;
         }
         //If the curtain is at a y position of 4.0 stop it from moving.
     }
 
     public void CurtainLower()
     {
-        speed = 4;
+      
         transform.Translate(Vector2.down * speed * Time.deltaTime);
-        transform.Translate(1, -2.9f, 31);
+        curtainPull = true;
+        //transform.Translate(1, -2.9f, 31);
         //If dance mode is active lower the curtain and keep it lowered.
 
-        if (transform.position.y >= -2.9f)
+        if (transform.position.y <= -3f)
         {
             speed = 0;
+            curtainPull = false;
         }
         //If the curtain is at a y position of -2.9 stop it from moving.
         
