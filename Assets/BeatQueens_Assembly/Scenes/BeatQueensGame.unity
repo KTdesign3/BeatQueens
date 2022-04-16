@@ -2464,7 +2464,7 @@ MonoBehaviour:
   BBPellet: {fileID: 6876027047282094448, guid: 3833aa2756e24724a98aff5b537a3c82,
     type: 3}
   Bullet: {fileID: 8841450212318421260, guid: 16a1ede5f4c5369449398cccc6dbc82c, type: 3}
-  Pellet: {fileID: 1479577440781957697, guid: 00f7c7dad967d62489ed1e15d3c9dd5d, type: 3}
+  Pellet: {fileID: 2712211649291128498, guid: 7fac6828338f6184da4e02efecdc05a6, type: 3}
   DamageTimeLeft: 5
   TimerActive: 0
   spawnAllow: 1
@@ -26124,7 +26124,7 @@ MonoBehaviour:
   DanceText: {fileID: 383039918}
   EndText: {fileID: 2046402268}
   Bullet: {fileID: 8841450212318421260, guid: 16a1ede5f4c5369449398cccc6dbc82c, type: 3}
-  Pellet: {fileID: 5189228656106079435, guid: 9deef48ab64823c4dba7e6a3cc2547f1, type: 3}
+  Pellet: {fileID: 2712211649291128498, guid: 7fac6828338f6184da4e02efecdc05a6, type: 3}
   SectionCanvasGO: {fileID: 807970848}
   SongCountdownTimerGO: {fileID: 1091402280}
   RedQueenGO: {fileID: 1742748581}
@@ -26553,7 +26553,6 @@ Transform:
   - {fileID: 1360420451}
   - {fileID: 2036254940}
   - {fileID: 1911610965}
-  - {fileID: 2116839572}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -26696,63 +26695,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2114617907}
   m_CullTransparentMesh: 0
---- !u!1 &2116839570
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2116839572}
-  - component: {fileID: 2116839571}
-  m_Layer: 0
-  m_Name: OrbManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2116839571
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2116839570}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c373233b787da144a1634b29a09fa9d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  orb1: {fileID: 8080957583712465142, guid: 2c6a5aaa68c385d49bd7acb7603072af, type: 3}
-  orb2: {fileID: 5779086474258235376, guid: 66bd3a8341c0ca34b8736d111129d042, type: 3}
-  spawnOrb1: 0
-  spawnOrb2: 0
-  Orb1TimerActive: 0
-  Orb2TimerActive: 0
-  OrbExplosionLeft: 5
-  Orb2ExplosionLeft: 5
-  Orb1TimerLeft: 3
-  Orb2TimerLeft: 3
-  orb1Destroyed: 0
-  orb2Destroyed: 0
-  spawnAllow: 1
-  callOrb2: 0
---- !u!4 &2116839572
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2116839570}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.4157603, y: 1.2926148, z: -6.527271}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2109673476}
-  m_RootOrder: 38
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2138911842
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,6 +11,7 @@ public class AttackSpawnerScript : MonoBehaviour
     public GameObject BBPellet;
     public GameObject Bullet;
     public GameObject Pellet;
+    //public GameObject SpawnedPellet;
 
 
     public float DamageTimeLeft = 5; //Value is set in inspector
@@ -145,8 +146,8 @@ public class AttackSpawnerScript : MonoBehaviour
                 {
 
                     //Destroy(Bomb);
-                    Destroy(Bullet);
-                    Destroy(Pellet);
+                    //Destroy(Bullet);
+                   // Destroy(Pellet);
                     Debug.Log("Timer ran out bullet self destructed");
                    // damageMade = false;
                     DamageTimeLeft = 5;

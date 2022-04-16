@@ -50,7 +50,7 @@ MonoBehaviour:
     type: 3}
   Bullet: {fileID: 8841450212318421260, guid: 16a1ede5f4c5369449398cccc6dbc82c, type: 3}
   Bomb: {fileID: 6670067664397407515, guid: 98bee03b3e19a3f4f8121844c4a8aae5, type: 3}
-  Pellet: {fileID: 2798618261395254648, guid: 7c9869eb5e51cef44abb3b0dbade1360, type: 3}
+  Pellet: {fileID: 2712211649291128498, guid: 7fac6828338f6184da4e02efecdc05a6, type: 3}
   DamageTimeLeft: 5
   TimerActive: 0
   BombTimer: 0
