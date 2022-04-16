@@ -57,7 +57,6 @@ GameObject:
   - component: {fileID: 3053660288019517215}
   - component: {fileID: 5474911615315787549}
   - component: {fileID: 8898264183811912294}
-  - component: {fileID: 7115946966345826377}
   - component: {fileID: -766317662912594822}
   m_Layer: 0
   m_Name: Bullet
@@ -157,29 +156,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.41, y: 0.46, z: 1.04}
   m_Center: {x: 0, y: -0.24, z: 0}
---- !u!114 &7115946966345826377
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8841450212318421260}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a315b4375fc021146af1154f7025a87a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BBPellet: {fileID: 6876027047282094448, guid: 3833aa2756e24724a98aff5b537a3c82,
-    type: 3}
-  Bullet: {fileID: 8841450212318421260}
-  Pellet: {fileID: 2712211649291128498, guid: 7fac6828338f6184da4e02efecdc05a6, type: 3}
-  SpawnedPellet: {fileID: 6876027047282094448, guid: 3833aa2756e24724a98aff5b537a3c82,
-    type: 3}
-  DamageTimeLeft: 5
-  TimerActive: 0
-  spawnAllow: 0
-  spawnBullet: 0
-  spawnPellet: 0
 --- !u!114 &-766317662912594822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -194,5 +170,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BulletTimeLeft: 3
   BulletTimerActive: 0
-  BulletMade: 0
+  BulletMade: 1
   Bullet: {fileID: 8841450212318421260}

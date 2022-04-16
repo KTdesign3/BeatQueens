@@ -74,7 +74,7 @@ public void PelletsExist()
             PelletTimeLeft -= Time.deltaTime;
             if (PelletTimeLeft <= 0) //This will explode the object after ExpTimeLeft hits 0.
             {
-                Destroy(Pellet);
+                Destroy(gameObject);
                 //  Destroy(Bomb);
                 Debug.Log("DESTROY PELLET");
                 PelletMade = false;

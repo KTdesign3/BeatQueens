@@ -44,7 +44,7 @@ public class PelletScript : MonoBehaviour
         PelletBigTimeLeft -= Time.deltaTime;
         if (PelletBigTimeLeft <= 0) //This will explode the object after ExpTimeLeft hits 0.
         {
-            Destroy(Pellet);
+           Destroy(gameObject);
             //  Destroy(Bomb);
             Debug.Log("DESTROY PELLET");
             PelletBigTimerMade = false;
