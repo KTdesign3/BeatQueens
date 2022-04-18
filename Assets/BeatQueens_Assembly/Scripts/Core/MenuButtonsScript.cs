@@ -17,6 +17,7 @@ public class MenuButtonsScript : MonoBehaviour
     public GameObject HTPSlide5;
     public GameObject HTPSlide6;
     public GameObject BeatQueensLogo;
+   // public GameObject SoundManager;
 
 
 
@@ -28,7 +29,8 @@ public class MenuButtonsScript : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); //Gets scene that comes immediately after this one in the build index
         Debug.Log("Player has started game");
-
+        //SoundManager.inst.PlaySound("IDOFYOURSOUNDHERE");
+        SoundManager.inst.PlaySound("MenuButtonFX");
     }
 
     public void SettingsMenuOpen()
@@ -48,6 +50,7 @@ public class MenuButtonsScript : MonoBehaviour
         MainMenu.SetActive(false);
         Debug.Log("Calling how to play menu");
         BeatQueensLogo.SetActive(false);
+        SoundManager.inst.PlaySound("TutButtonFX");
 
     }
 
