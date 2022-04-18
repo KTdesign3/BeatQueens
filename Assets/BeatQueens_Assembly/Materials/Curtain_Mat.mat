@@ -117,7 +117,7 @@ Material:
     - _FoamDepth: 0.5
     - _FoamDirection: -0.62
     - _FoamMode: 1
-    - _FoamNoiseAmount: 0.352
+    - _FoamNoiseAmount: 0.67
     - _FoamScale: 0
     - _FoamSharpness: 0.5
     - _FoamSpeed: 0

@@ -52,7 +52,7 @@ public class CurtainRaiseScript : MonoBehaviour
         //transform.Translate(1, -2.9f, 31);
         //If dance mode is active lower the curtain and keep it lowered.
 
-        if (transform.position.y <= -3f)
+        if (transform.position.y <= -4f)
         {
             speed = 0;
             curtainPull = false;
