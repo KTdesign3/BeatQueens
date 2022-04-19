@@ -25,6 +25,7 @@ public class PlayerScore : MonoBehaviour
             
             ScoreScript.health -= 5;
             Debug.Log("Player has collided with a damage item!");
+            SoundManager.inst.PlaySound("NaviTakeDamage");
 
             //Added by KS 14/01/2022
             //When the player is hurt the cube will flash white. This will be applied to the 3D model for Navi.
@@ -33,8 +34,8 @@ public class PlayerScore : MonoBehaviour
             //Commented out by KS 25/03/2022
             //Commenting this out to fix bug.
             //PlayerDamageObject.GetComponent<HurtPlayerColorScript>().Injury();
-           // Debug.Log("Player hurt flash play");
-         
+            // Debug.Log("Player hurt flash play");
+
         }
 
         
@@ -47,7 +48,8 @@ public class PlayerScore : MonoBehaviour
         ScoreScript.health -= 50;
 
         PlayerDamageObject.GetComponent<HurtPlayerColorScript>().Injury();
-        Debug.Log("Player hurt flash play");
+        Debug.Log("Player hurt flash play"); 
+        //SoundManager.inst.PlaySound("NaviTakeDamage");
     }
 
 

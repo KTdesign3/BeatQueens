@@ -215,6 +215,8 @@ public class PlayerMovement : MonoBehaviour
 
             Navi3DAnimator.SetBool("NaviSpeed0", false);
 
+        
+
 
         }
 
@@ -557,7 +559,9 @@ public class PlayerMovement : MonoBehaviour
             Navi3DAnimator.SetBool("NaviRunRight", false);
             // Navi3DAnimator.SetBool("NaviSpeed0", false);
             Navi3DAnimator.SetBool("FacingLeft", true);
-            Navi3DAnimator.SetBool("FacingRight", false) ;
+            Navi3DAnimator.SetBool("FacingRight", false);
+            SoundManager.inst.PlaySound("NaviRun");
+           
         }
 
         if (Input.GetKeyDown(KeyCode.D) == true && pressedDash == false && OnFloor == true && playerLocked == false)
@@ -568,6 +572,7 @@ public class PlayerMovement : MonoBehaviour
             //Navi3DAnimator.SetBool("NaviSpeed0", false);
             Navi3DAnimator.SetBool("FacingRight", true);
             Navi3DAnimator.SetBool("FacingLeft", false);
+            SoundManager.inst.PlaySound("NaviRun");
         }
 
 
@@ -582,7 +587,7 @@ public class PlayerMovement : MonoBehaviour
             //Navi3DAnimator.SetBool("DanceFalse", true);
             Navi3DAnimator.SetBool("NaviDashRight", true);
             Navi3DAnimator.SetBool("NaviDashLeft", false);
-
+            SoundManager.inst.PlaySound("NaviDash");
 
         }
 
@@ -596,7 +601,7 @@ public class PlayerMovement : MonoBehaviour
             //Navi3DAnimator.SetBool("NaviSpeed0", false);
             Navi3DAnimator.SetBool("NaviDashLeft", true);
             Navi3DAnimator.SetBool("NaviDashRight", false);
-
+            SoundManager.inst.PlaySound("NaviDash");
 
         }
 

@@ -94,6 +94,7 @@ namespace Dypsloom.RhythmTimeline.UI
             m_SelectedSongPanel.StopPreviewClip();
             m_RhythmGameManager.PlaySong(m_RhythmGameManager.Songs[m_SelectedIndex]);
             Close();
+            
         }
     }
 }

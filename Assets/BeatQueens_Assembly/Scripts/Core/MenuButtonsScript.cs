@@ -32,7 +32,7 @@ public class MenuButtonsScript : MonoBehaviour
         //SoundManager.inst.PlaySound("IDOFYOURSOUNDHERE");
         SoundManager.inst.PlaySound("MenuButtonFX");
     }
-
+    /*
     public void SettingsMenuOpen()
     {
        // SceneManager.LoadScene("SettingsMenu");
@@ -40,7 +40,7 @@ public class MenuButtonsScript : MonoBehaviour
         MainMenu.SetActive(false);
         Debug.Log("Calling settings menu");
 
-    }
+    } */
 
 
     public void HowToPlayOpen()
@@ -50,7 +50,8 @@ public class MenuButtonsScript : MonoBehaviour
         MainMenu.SetActive(false);
         Debug.Log("Calling how to play menu");
         BeatQueensLogo.SetActive(false);
-        SoundManager.inst.PlaySound("TutButtonFX");
+        //SoundManager.inst.PlaySound("TutButtonFX");
+        SoundManager.inst.PlaySound("MenuButtonFX");
 
     }
 
@@ -60,16 +61,16 @@ public class MenuButtonsScript : MonoBehaviour
         HTPSlide1.SetActive(true);
         HTPSlide2.SetActive(false);
         BeatQueensLogo.SetActive(false);
-
+        SoundManager.inst.PlaySound("MenuButtonFX");
     }
 
     public void Slide2Open()
     {
-
+        HTPSlide1.SetActive(false);
         HTPSlide2.SetActive(true);
         HTPSlide3.SetActive(false);
         BeatQueensLogo.SetActive(false);
-
+        SoundManager.inst.PlaySound("MenuButtonFX");
     }
 
     public void Slide3Open()
@@ -77,7 +78,7 @@ public class MenuButtonsScript : MonoBehaviour
         HTPSlide2.SetActive(false);
         HTPSlide3.SetActive(true);
         BeatQueensLogo.SetActive(false);
-
+        SoundManager.inst.PlaySound("MenuButtonFX");
 
     }
 
@@ -87,6 +88,7 @@ public class MenuButtonsScript : MonoBehaviour
         HTPSlide4.SetActive(true);
         HTPSlide5.SetActive(false);
         BeatQueensLogo.SetActive(false);
+        SoundManager.inst.PlaySound("MenuButtonFX");
     }
 
     public void Slide5Open()
@@ -95,6 +97,7 @@ public class MenuButtonsScript : MonoBehaviour
         HTPSlide5.SetActive(true);
         HTPSlide4.SetActive(false);
         BeatQueensLogo.SetActive(false);
+        SoundManager.inst.PlaySound("MenuButtonFX");
     }
 
     public void Slide6Open()
@@ -102,6 +105,7 @@ public class MenuButtonsScript : MonoBehaviour
         HTPSlide6.SetActive(true);
         HTPSlide5.SetActive(false);
         BeatQueensLogo.SetActive(false);
+        SoundManager.inst.PlaySound("MenuButtonFX");
     }
 
  
@@ -109,12 +113,15 @@ public class MenuButtonsScript : MonoBehaviour
     {
         HTPSlide1.SetActive(false);
         MainMenu.SetActive(true);
+        SoundManager.inst.PlaySound("MenuButtonFX");
+        BeatQueensLogo.SetActive(true);
     }
 
     public void Slide2Close()
     {
         HTPSlide1.SetActive(true);
         HTPSlide2.SetActive(false);
+        SoundManager.inst.PlaySound("MenuButtonFX");
     }
 
     public void Slide3Close()
@@ -122,6 +129,7 @@ public class MenuButtonsScript : MonoBehaviour
         HTPSlide1.SetActive(false);
         HTPSlide2.SetActive(true);
         HTPSlide3.SetActive(false);
+        SoundManager.inst.PlaySound("MenuButtonFX");
     }
 
     public void Slide4Close()
@@ -129,6 +137,7 @@ public class MenuButtonsScript : MonoBehaviour
         HTPSlide2.SetActive(false);
         HTPSlide3.SetActive(true);
         HTPSlide4.SetActive(false);
+        SoundManager.inst.PlaySound("MenuButtonFX");
     }
 
     public void Slide5Close()
@@ -136,6 +145,7 @@ public class MenuButtonsScript : MonoBehaviour
         HTPSlide3.SetActive(false);
         HTPSlide4.SetActive(true);
         HTPSlide5.SetActive(false);
+        SoundManager.inst.PlaySound("MenuButtonFX");
     }
 
     public void Slide6Close()
@@ -143,7 +153,9 @@ public class MenuButtonsScript : MonoBehaviour
         HTPSlide4.SetActive(false);
         HTPSlide5.SetActive(true);
         HTPSlide6.SetActive(false);
-       
+        SoundManager.inst.PlaySound("MenuButtonFX");
+        BeatQueensLogo.SetActive(true);
+
     }
 
     public void SlideAllClose()
@@ -164,5 +176,6 @@ public class MenuButtonsScript : MonoBehaviour
         
         Application.Quit();
         Debug.Log("Player has quit game");
+        SoundManager.inst.PlaySound("QuitButtonFX");
     }
 }

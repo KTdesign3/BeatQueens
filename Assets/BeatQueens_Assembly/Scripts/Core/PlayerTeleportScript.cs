@@ -37,7 +37,7 @@ public class PlayerTeleportScript : MonoBehaviour
 
         transform.position = new Vector3(0, -2.41f, -1.4f);
         GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ;
-        
+        SoundManager.inst.PlaySound("TeleportFX");
     }
 
     //Code to resets players position if they end up out of bounds
