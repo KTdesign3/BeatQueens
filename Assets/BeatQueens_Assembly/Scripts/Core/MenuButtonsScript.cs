@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MenuButtonsScript : MonoBehaviour
 {
-    public GameObject SettingsMenu;
+    //public GameObject SettingsMenu;
     public GameObject MainMenu;
     public GameObject HowToPlayMenu;
     public GameObject HTPMenu;
@@ -99,14 +99,14 @@ public class MenuButtonsScript : MonoBehaviour
         BeatQueensLogo.SetActive(false);
         SoundManager.inst.PlaySound("MenuButtonFX");
     }
-
+    
     public void Slide6Open()
     {
         HTPSlide6.SetActive(true);
         HTPSlide5.SetActive(false);
         BeatQueensLogo.SetActive(false);
         SoundManager.inst.PlaySound("MenuButtonFX");
-    }
+    } 
 
  
     public void Slide1Close()
@@ -122,6 +122,7 @@ public class MenuButtonsScript : MonoBehaviour
         HTPSlide1.SetActive(true);
         HTPSlide2.SetActive(false);
         SoundManager.inst.PlaySound("MenuButtonFX");
+        BeatQueensLogo.SetActive(false);
     }
 
     public void Slide3Close()
@@ -130,6 +131,7 @@ public class MenuButtonsScript : MonoBehaviour
         HTPSlide2.SetActive(true);
         HTPSlide3.SetActive(false);
         SoundManager.inst.PlaySound("MenuButtonFX");
+        BeatQueensLogo.SetActive(false);
     }
 
     public void Slide4Close()
@@ -138,6 +140,7 @@ public class MenuButtonsScript : MonoBehaviour
         HTPSlide3.SetActive(true);
         HTPSlide4.SetActive(false);
         SoundManager.inst.PlaySound("MenuButtonFX");
+        BeatQueensLogo.SetActive(false);
     }
 
     public void Slide5Close()
@@ -146,17 +149,18 @@ public class MenuButtonsScript : MonoBehaviour
         HTPSlide4.SetActive(true);
         HTPSlide5.SetActive(false);
         SoundManager.inst.PlaySound("MenuButtonFX");
+        BeatQueensLogo.SetActive(false);
     }
-
+    
     public void Slide6Close()
     {
         HTPSlide4.SetActive(false);
         HTPSlide5.SetActive(true);
         HTPSlide6.SetActive(false);
         SoundManager.inst.PlaySound("MenuButtonFX");
-        BeatQueensLogo.SetActive(true);
+        BeatQueensLogo.SetActive(false);
 
-    }
+    } 
 
     public void SlideAllClose()
     {
@@ -169,6 +173,7 @@ public class MenuButtonsScript : MonoBehaviour
         HTPSlide6.SetActive(false);
         MainMenu.SetActive(true);
         BeatQueensLogo.SetActive(true);
+        SoundManager.inst.PlaySound("MenuButtonFX");
     }
 
     public void QuitGame()
