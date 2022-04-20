@@ -12,6 +12,7 @@ public class EnemyHandScript : MonoBehaviour
     public bool EnemyHandActive;
     public GameObject Boundary;
     public GameObject PlayerDamage;
+    public GameObject EnemyHeart;
 
 
     //New Code
@@ -366,7 +367,9 @@ public class EnemyHandScript : MonoBehaviour
             EnemyScoreScript.EnemyScoreValue -= 50;
             SoundManager.inst.PlaySound("HeartTakeDamage");
             //HurtColorChangeScript.Injury
-            GetComponent<HurtColorChangeScript>().Injury();
+            // GetComponent<HurtColorChangeScript>().Injury();
+            //GetComponent<DamageFlashScript>().EFlash();
+            EnemyHeart.GetComponent<DamageFlashScript>().AttackFlash();
         }
 
         

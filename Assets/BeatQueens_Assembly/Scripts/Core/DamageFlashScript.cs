@@ -15,6 +15,12 @@ public class DamageFlashScript : MonoBehaviour
         origColor = SkinnedMeshRenderer.material.color;
     }
 
+    public void AttackFlash()
+    {
+        StartCoroutine(EFlash());
+    }
+
+
     // Update is called once per frame
     void Update()
     {
@@ -25,10 +31,11 @@ public class DamageFlashScript : MonoBehaviour
         }
     }
 
+    
 
-    void FlashStart()
+   public void FlashStart()
     {
-        SkinnedMeshRenderer.material.color = Color.red;
+        SkinnedMeshRenderer.material.color = Color.white;
         Invoke("FlashStop", flashTime);
         Debug.Log("FlashStart called");
     }
@@ -39,9 +46,9 @@ public class DamageFlashScript : MonoBehaviour
         origColor = SkinnedMeshRenderer.material.color;
     }
 
-    IEnumerator EFlash()
+    public IEnumerator EFlash()
     {
-        SkinnedMeshRenderer.material.color = Color.red;
+        SkinnedMeshRenderer.material.color = Color.white;
         yield return new WaitForSeconds(flashTime);
         SkinnedMeshRenderer.material.color = origColor;
     }

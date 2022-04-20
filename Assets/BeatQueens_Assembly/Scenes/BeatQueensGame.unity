@@ -1478,6 +1478,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 173269770}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &173269774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173269771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51826c16ef1a9c247aee88af0c172978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &173269775
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1498,6 +1510,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 2d1b3e7e7be9e9243b55330e53d30ee1, type: 2}
+  - {fileID: 2100000, guid: a9447b1071941e546b4d59216ebb4952, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2691,6 +2704,7 @@ MonoBehaviour:
   EnemyHandActive: 0
   Boundary: {fileID: 1125673106}
   PlayerDamage: {fileID: 696848639}
+  EnemyHeart: {fileID: 0}
   EnemyDamageEnemyHandGO: {fileID: 744797775}
   EnemyHurtTime: 0
   startTime: 5
@@ -13446,7 +13460,6 @@ GameObject:
   - component: {fileID: 902072246}
   - component: {fileID: 902072248}
   - component: {fileID: 902072247}
-  - component: {fileID: 902072249}
   m_Layer: 0
   m_Name: EnemyHeart
   m_TagString: PlayerDamage
@@ -13487,6 +13500,7 @@ MonoBehaviour:
   EnemyHandActive: 0
   Boundary: {fileID: 1125673106}
   PlayerDamage: {fileID: 696848639}
+  EnemyHeart: {fileID: 1840278185}
   EnemyDamageEnemyHandGO: {fileID: 744797775}
   EnemyHurtTime: 0
   startTime: 5
@@ -13533,28 +13547,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerDamage: {fileID: 696848639}
   Navi: {fileID: 1408802724}
---- !u!114 &902072249
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 902072244}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af48f93127c833c4380b428edb274eea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  injuryMat: {fileID: 2100000, guid: 0fce798f3efafed44a43af2c4d2431c0, type: 2}
-  handMat: {fileID: 2100000, guid: a76cefda796e8a1499998c2b2a6b4e69, type: 2}
-  InjuryTimeLeft: 0.001
-  InjuryTimerActive: 0
-  InjuryMade: 0
-  EnemyHeart: {fileID: 1840278185}
-  materials:
-  - {fileID: 2100000, guid: a76cefda796e8a1499998c2b2a6b4e69, type: 2}
-  - {fileID: 2100000, guid: 0fce798f3efafed44a43af2c4d2431c0, type: 2}
-  index: 0
 --- !u!1 &905170122
 GameObject:
   m_ObjectHideFlags: 0
