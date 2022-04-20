@@ -37,6 +37,7 @@ public class HurtPlayerColorScript : MonoBehaviour
     }
 
 
+
     public void Injury()
     {
         StartCoroutine(InjuryFlash());
@@ -54,7 +55,7 @@ public class HurtPlayerColorScript : MonoBehaviour
             //injuryMat.color = Color.white; //Changes material to white if player dashes into enemy.
            // playerMat.color = Color.white; //Changes material to white if player dashes into enemy.
             Debug.Log("Player has been hurt, running flashing white code now in HurtPlayerColorScript");
-            x = 3;
+            x = 1;
             yield return new WaitForSeconds(0.1f);
             //InjuryMade = false; //Resets injury timer after flashing
             InjuryTimeLeft = 0.001f;

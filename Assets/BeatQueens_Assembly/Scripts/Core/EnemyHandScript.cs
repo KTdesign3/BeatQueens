@@ -365,6 +365,8 @@ public class EnemyHandScript : MonoBehaviour
             Debug.Log("Player dashed into EnemyHandScript, deducting points from enemy hand");
             EnemyScoreScript.EnemyScoreValue -= 50;
             SoundManager.inst.PlaySound("HeartTakeDamage");
+            //HurtColorChangeScript.Injury
+            GetComponent<HurtColorChangeScript>().Injury();
         }
 
         

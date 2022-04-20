@@ -11,17 +11,27 @@ public class HurtColorChangeScript : MonoBehaviour
     public float InjuryTimeLeft = 0.001f; //Value is set in inspector. 
     public bool InjuryTimerActive;
     public bool InjuryMade;
-    public GameObject EnemyHand;
-
+    public GameObject EnemyHeart;
+    //public Material HeartMat;
+    //public Material InjuryMat;
+    public Material[] materials;
+    public int index = 0;
    
     // Start is called before the first frame update
     void Start()
     {
         // BulletTimeLeft = 5;
-        handMat.color = Color.red;
+       // handMat.color = Color.red;
         InjuryTimeLeft = 0.001f;
 
+
+        //EnemyHeart.GetComponent<MeshRenderer>().material.color = Color.red
+        //renderer.material = materials[index];
+        GetComponent<Renderer>();
+
+
     }
+
 
    
     public void Injury()
@@ -38,13 +48,27 @@ public class HurtColorChangeScript : MonoBehaviour
         if (InjuryTimeLeft <= 0) //This will explode the object after ExpTimeLeft hits 0.
         {
             InjuryTimerActive = true;
+            InjuryMade = true;
             //injuryMat.color = Color.white; //Changes material to white if player dashes into enemy.
-            handMat.color = Color.white; //Changes material to white if player dashes into enemy.
+            //handMat.color = Color.white; //Changes material to white if player dashes into enemy.
+            index = 0;
+            // renderer.material = materials[1];
+            //GetComponent<Renderer>(1);
+            //GetComponent<Renderer>(1);
             Debug.Log("Player has injured enemy, running flashing white code now");
             yield return new WaitForSeconds(0.1f);
             //InjuryMade = false; //Resets injury timer after flashing
             InjuryTimeLeft = 0.001f;
-            handMat.color = Color.red;
+            //handMat.color = Color.red;
+            
+        }
+
+        if (InjuryTimeLeft > 0) //This sets the color back to the 1 in the material slot.
+        {
+           
+            index = 1;
+            
+
         }
 
         /*
