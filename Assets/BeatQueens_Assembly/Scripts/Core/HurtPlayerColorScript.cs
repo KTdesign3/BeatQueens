@@ -19,6 +19,9 @@ public class HurtPlayerColorScript : MonoBehaviour
     public bool InjuryMade;
     public GameObject Player;
     public int x;
+    public SkinnedMeshRenderer NaviBodyGO;
+
+    public Material playerMat;
     
     //public Material SpriteDefaultMat;
 
@@ -33,6 +36,7 @@ public class HurtPlayerColorScript : MonoBehaviour
         rend = GetComponent<Renderer>();
         rend.enabled = true;
         rend.sharedMaterial = NaviplayerMat[x];
+
 
     }
 
@@ -53,10 +57,10 @@ public class HurtPlayerColorScript : MonoBehaviour
         {
             InjuryTimerActive = true;
             //injuryMat.color = Color.white; //Changes material to white if player dashes into enemy.
-           // playerMat.color = Color.white; //Changes material to white if player dashes into enemy.
+           playerMat.color = Color.red; //Changes material to white if player dashes into enemy.
             Debug.Log("Player has been hurt, running flashing white code now in HurtPlayerColorScript");
             x = 1;
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(0.5f);
             //InjuryMade = false; //Resets injury timer after flashing
             InjuryTimeLeft = 0.001f;
             //  playerMat.color = Color.blue;

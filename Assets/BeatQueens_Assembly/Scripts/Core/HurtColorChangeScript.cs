@@ -16,6 +16,7 @@ public class HurtColorChangeScript : MonoBehaviour
     //public Material InjuryMat;
     public Material[] materials;
     public int index = 0;
+    public SkinnedMeshRenderer NaviBodyGO;
    
     // Start is called before the first frame update
     void Start()
@@ -63,7 +64,7 @@ public class HurtColorChangeScript : MonoBehaviour
             
         }
 
-        if (InjuryTimeLeft > 0) //This sets the color back to the 1 in the material slot.
+        if (InjuryTimeLeft > 0.001f) //This sets the color back to the 1 in the material slot.
         {
            
             index = 1;

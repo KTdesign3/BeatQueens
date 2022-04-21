@@ -13,6 +13,7 @@ public class EnemyHandScript : MonoBehaviour
     public GameObject Boundary;
     public GameObject PlayerDamage;
     public GameObject EnemyHeart;
+    
 
 
     //New Code

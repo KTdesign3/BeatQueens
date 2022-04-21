@@ -6,6 +6,9 @@ public class PlayerScore : MonoBehaviour
 {
     public bool PlayerVulnerable;
     public GameObject PlayerDamageObject;
+    public GameObject NaviGO;
+    //public Material NaviMat;
+   // public Material NaviInjuredMat;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +29,7 @@ public class PlayerScore : MonoBehaviour
             ScoreScript.health -= 5;
             Debug.Log("Player has collided with a damage item!");
             SoundManager.inst.PlaySound("NaviTakeDamage");
+            NaviGO.GetComponent<NaviFlashScript>().AttackFlash();
 
             //Added by KS 14/01/2022
             //When the player is hurt the cube will flash white. This will be applied to the 3D model for Navi.
@@ -48,8 +52,10 @@ public class PlayerScore : MonoBehaviour
         ScoreScript.health -= 50;
 
         PlayerDamageObject.GetComponent<HurtPlayerColorScript>().Injury();
-        Debug.Log("Player hurt flash play"); 
+        Debug.Log("Player hurt flash play");
         //SoundManager.inst.PlaySound("NaviTakeDamage");
+        //NaviGO.GetComponent<DamageFlashScript>().AttackFlash();
+        NaviGO.GetComponent<NaviFlashScript>().AttackFlash();
     }
 
 

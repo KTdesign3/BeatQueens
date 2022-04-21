@@ -7,10 +7,13 @@ public class PlayerTeleportScript : MonoBehaviour
 
     public GameObject Navi;
     public Transform PlayerDancePos;
+    public GameObject TeleporterGO;
+    public bool TeleporterFXOn;
+    public GameObject TeleportFXGO;
     // Start is called before the first frame update
     void Start()
     {
-
+        TeleporterGO.SetActive(true);
     }
 
     // Update is called once per frame
@@ -18,6 +21,9 @@ public class PlayerTeleportScript : MonoBehaviour
     {
 
 
+      
+
+        /*
         if (Input.GetKey(KeyCode.G) == true)
         {
 
@@ -27,7 +33,10 @@ public class PlayerTeleportScript : MonoBehaviour
             GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ;
             //PlayerSpeed = 0;
             Debug.Log("Reset position");
-        }
+        } */
+
+
+
 
     }
 
@@ -38,7 +47,25 @@ public class PlayerTeleportScript : MonoBehaviour
         transform.position = new Vector3(0, -2.41f, -1.4f);
         GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ;
         SoundManager.inst.PlaySound("TeleportFX");
+       // TeleporterGO.SetActive(true);
+        //TeleporterFXOn = true;
+        TeleportFXGO.GetComponent<TeleporterControllerScript>().EnableTeleporter(); //Calls teleporter FX
+
     }
+
+    /*
+    public void weeblewobble()
+    {
+        if (TeleporterFXOn == true)
+        {
+            yield return new WaitForSeconds(0.3f);
+            TeleporterGO.SetActive(false);
+        }
+    }
+     */
+
+
+  
 
     //Code to resets players position if they end up out of bounds
     private void OnTriggerEnter(Collider other)
