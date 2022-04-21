@@ -67,12 +67,13 @@ public class PlayerAttackScript : MonoBehaviour
 	// Update is called once per frame
 	void Update()
     {
+		/*
 		if (Input.GetMouseButtonDown(0)) //0 for left mouse button, 1 for right mouse button
 		{
 			print("Character attacking");
 			IsAttacking = true;
 			
-		}
+		} */
 
 
 	    if (Input.GetKeyDown(KeyCode.RightShift) == true) //This is the right dash attack

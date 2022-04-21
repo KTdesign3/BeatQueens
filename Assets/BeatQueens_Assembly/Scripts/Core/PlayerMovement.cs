@@ -575,7 +575,17 @@ public class PlayerMovement : MonoBehaviour
             SoundManager.inst.PlaySound("NaviRun");
         }
 
+        if (Input.GetKey(KeyCode.D) == true && pressedDash == false && OnFloor == true && playerLocked == false)
+        {
+           
+            SoundManager.inst.PlaySound("NaviRun");
+        }
 
+        if (Input.GetKey(KeyCode.A) == true && pressedDash == false && OnFloor == true && playerLocked == false)
+        {
+
+            SoundManager.inst.PlaySound("NaviRun");
+        }
 
         if (pressedDash == true && FacingRight && playerLocked == false) //Controls speed when dashing to the right. 
         {

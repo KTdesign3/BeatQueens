@@ -5140,6 +5140,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1604570903184279294, guid: 73d50a1f61c0c0d449cb4247cfafd1b0,
+        type: 3}
+      propertyPath: Priority
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1604570903184279295, guid: 73d50a1f61c0c0d449cb4247cfafd1b0,
         type: 3}
       propertyPath: m_InitialState
@@ -15570,12 +15575,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &1056224935 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 1604570903184279294, guid: 73d50a1f61c0c0d449cb4247cfafd1b0,
-    type: 3}
-  m_PrefabInstance: {fileID: 478391423}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1081801800
 GameObject:
   m_ObjectHideFlags: 0
@@ -21276,10 +21275,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicVolume: 2.86
   sfxVolume: 1.07
-  musicSource: {fileID: 1056224935}
+  musicSource: {fileID: 0}
   soundClips:
   - clip: {fileID: 8300000, guid: 3fccdccbaf5a5da4188c04accb48a622, type: 3}
-    id: NaviRun
+    id: NaviRunREMOVED
   - clip: {fileID: 8300000, guid: 6d305e8f638295446a5f805f807a0319, type: 3}
     id: NaviDash
   - clip: {fileID: 8300000, guid: 314ef9e619406c64b93556bd58e546d8, type: 3}

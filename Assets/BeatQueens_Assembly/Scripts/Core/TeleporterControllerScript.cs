@@ -32,40 +32,45 @@ public class TeleporterControllerScript : MonoBehaviour
     {
 
         TeleporterShimmerGO.SetActive(true);
-       // TeleporterTimeLeft = 0.5f;
+        //TeleporterTimeLeft = 0.5f;
         StartCoroutine(EnableTeleporterTimer()); //This calls the coroutine that will disable the teleporter fx after a set period of time.
         TeleporterTimerActive = true;
     }
 
-
+    /*
     public void DisableTeleporter()
     {
         /* if (TeleporterFXOn == true)
          {
              yield return new WaitForSeconds(0.3f);
              TeleporterGO.SetActive(false);
-         } */
+         } 
 
         TeleporterShimmerGO.SetActive(false);
         TeleporterTimerActive = false;
         TeleporterFXOn = false;
-    }
+    } */
 
 
     private IEnumerator EnableTeleporterTimer()
     {
+        
         TeleporterTimerActive = true;
         TeleporterTimeLeft -= Time.deltaTime;
         
-        if (TeleporterTimeLeft <= 0.01f) //This will explode the object after ExpTimeLeft hits 0.
+        if (TeleporterTimeLeft <= 0.1f) //This will explode the object after ExpTimeLeft hits 0.
         {
            
             //TeleporterFXOn = false;
            // TeleporterTimeLeft = 0.0f;
-            DisableTeleporter();
+            //DisableTeleporter();
             Debug.Log("Turning off teleporter FX now");
             TeleporterFXOn = false;
-            yield return new WaitForSeconds(0.5f);
+            TeleporterShimmerGO.SetActive(false);
+            TeleporterTimerActive = false;
+            yield return null;
+
+            ///yield return new WaitForSeconds(0.1f);
 
         }
 
@@ -73,12 +78,21 @@ public class TeleporterControllerScript : MonoBehaviour
         {
 
             TeleporterFXOn = true;
+            TeleporterShimmerGO.SetActive(true);
             //Debug.Log("Turning off teleporter FX now");
             Debug.Log("Running teleporter FX code now");
 
         }
 
-        
+        if (TeleporterTimeLeft >= -2f) //This sets the color back to the 1 in the material slot.
+        {
+
+            TeleporterTimerActive = false;
+            TeleporterFXOn = false;
+
+        }
+
+
     }
 
 
