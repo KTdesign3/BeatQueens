@@ -26,8 +26,8 @@ public class DamageFlashScript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
-            //FlashStart();
-            StartCoroutine(EFlash());
+            
+            //StartCoroutine(EFlash());
         }
     }
 
