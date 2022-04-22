@@ -8,14 +8,24 @@ public class TeleporterControllerScript : MonoBehaviour
     public GameObject TeleporterFXGO;
     public GameObject TeleporterShimmerGO;
     public bool TeleporterFXOn;
-    public float TeleporterTimeLeft = 0.5f; //Value is set in inspector. Value for time pellets have left.
-    public bool TeleporterTimerActive;
+    //public float TeleporterTimeLeft = 0.5f; //Value is set in inspector. Value for time pellets have left.
+    //public bool TeleporterTimerActive;
     // Start is called before the first frame update
+
+    
     void Start()
+    {
+        //TeleporterTimeLeft = 0.5f; ///Teleport timer is set to 0 by defaults
+        //TeleporterFXGO.SetActive(true);
+        TeleporterFXGO.SetActive(false);
+    } 
+
+    /*
+    private void Awake()
     {
         TeleporterTimeLeft = 0.5f; ///Teleport timer is set to 0 by defaults
         TeleporterFXGO.SetActive(true);
-    }
+    } */
 
     // Update is called once per frame
     void Update()
@@ -24,10 +34,26 @@ public class TeleporterControllerScript : MonoBehaviour
     }
 
 
-   
 
 
-    
+    public void EnableShimmer()
+    {
+
+        TeleporterShimmerGO.SetActive(true);
+        TeleporterFXGO.SetActive(true);
+
+    }
+
+
+    public void DisableShimmer()
+    {
+
+        TeleporterShimmerGO.SetActive(false);
+        TeleporterFXGO.SetActive(false);
+
+    }
+
+    /*
     public void EnableTeleporter() //If the teleporter enabler is called the teleporter is set to active and its time is set to 0.5. 
     {
 
@@ -50,7 +76,7 @@ public class TeleporterControllerScript : MonoBehaviour
         TeleporterTimerActive = false;
         TeleporterFXOn = false;
     } */
-
+    /*
 
     private IEnumerator EnableTeleporterTimer()
     {
@@ -93,7 +119,7 @@ public class TeleporterControllerScript : MonoBehaviour
         }
 
 
-    }
+    }  */
 
 
 

@@ -60,4 +60,11 @@ public class CurtainRaiseScript : MonoBehaviour
         //If the curtain is at a y position of -2.9 stop it from moving.
         
     }
+
+
+    public void PositionCurtain() ///Repositions the curtain if you restart the level.
+    {
+        transform.position = new Vector3(6.7f, -4.12f, 30.9f);
+    }
+        
 }

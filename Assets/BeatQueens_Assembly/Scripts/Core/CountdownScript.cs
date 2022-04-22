@@ -27,6 +27,7 @@ public class CountdownScript : MonoBehaviour
     public GameObject EnemyHandGO;
     public GameObject PlayerScoreGO;
     public GameObject TracksGO;
+    public GameObject TeleportShimmerGO;
     public GameObject curtainGO; //This is the curtain game object that separates the queen and Navi.
     [SerializeField] GameObject EnemyScoreTest;
     public float Dance1 = 196f;
@@ -73,6 +74,7 @@ public class CountdownScript : MonoBehaviour
         EndText.SetActive(false);
         TracksGO.SetActive(true);
         ResetScore();
+        TeleportShimmerGO.GetComponent<TeleporterControllerScript>().DisableShimmer(); //Disables shimmer.
     }
 
 
@@ -87,6 +89,8 @@ public class CountdownScript : MonoBehaviour
         //LowerQueenScore
         EnemyScoreTest.GetComponent<EnemyScoreScript>().LowerQueenScore();
         PlayerScoreGO.GetComponent<ScoreScript>().ResetPlayerScore();
+        curtainGO.GetComponent<CurtainRaiseScript>().PositionCurtain();
+        TeleportShimmerGO.GetComponent<TeleporterControllerScript>().DisableShimmer(); //Disables shimmer.
 
     }
 
@@ -105,6 +109,7 @@ public class CountdownScript : MonoBehaviour
         Navi.GetComponent<PlayerMovement>().LockPlayer();
         AttackSpawnerGO.GetComponent<AttackSpawnerScript>().SpawnAllowCallStop();
         RedQueenGO.GetComponent<RedQueenScript>().QueenStopAll(); //Stops queens score and dancing
+        TeleportShimmerGO.GetComponent<TeleporterControllerScript>().DisableShimmer(); //Disables shimmer.
     }
 
     #region Timer
@@ -207,7 +212,20 @@ public class CountdownScript : MonoBehaviour
 
         }
 
+        if (timer1 < 100)
+        {
+            TeleportShimmerGO.GetComponent<TeleporterControllerScript>().DisableShimmer(); //Disables shimmer.
+        }
 
+        if (timer1 > 99 && timer1 < 100)
+        {
+            TeleportShimmerGO.GetComponent<TeleporterControllerScript>().EnableShimmer(); //Enables shimmer.
+        }
+
+        if (timer1 > 1 && timer1 < 98.5)
+        {
+            TeleportShimmerGO.GetComponent<TeleporterControllerScript>().DisableShimmer(); //Disables shimmer.
+        }
 
         if (timer1 > 51.5f && timer1 <= 100)
         {
@@ -256,7 +274,15 @@ public class CountdownScript : MonoBehaviour
 
         }
 
-       
+        if (timer1 < 0)
+        {
+            TeleportShimmerGO.GetComponent<TeleporterControllerScript>().EnableShimmer(); //Disables shimmer.
+        }
+
+        if (timer1 < -2)
+        {
+            TeleportShimmerGO.GetComponent<TeleporterControllerScript>().DisableShimmer(); //Disables shimmer.
+        }
 
     }
 

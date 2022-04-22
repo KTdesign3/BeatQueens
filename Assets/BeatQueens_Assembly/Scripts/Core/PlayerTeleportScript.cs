@@ -49,7 +49,7 @@ public class PlayerTeleportScript : MonoBehaviour
         SoundManager.inst.PlaySound("TeleportFX");
        // TeleporterGO.SetActive(true);
         //TeleporterFXOn = true;
-        TeleportFXGO.GetComponent<TeleporterControllerScript>().EnableTeleporter(); //Calls teleporter FX
+        //TeleportFXGO.GetComponent<TeleporterControllerScript>().EnableTeleporter(); //Calls teleporter FX
 
     }
 

@@ -3368,7 +3368,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &373676178
 Transform:
   m_ObjectHideFlags: 0
@@ -21279,13 +21279,13 @@ MonoBehaviour:
   soundClips:
   - clip: {fileID: 8300000, guid: 3fccdccbaf5a5da4188c04accb48a622, type: 3}
     id: NaviRunREMOVED
-  - clip: {fileID: 8300000, guid: 6d305e8f638295446a5f805f807a0319, type: 3}
-    id: NaviDash
+  - clip: {fileID: 8300000, guid: 5cbb4bc2cf0188a448587ea662374a51, type: 3}
+    id: NaviDashREMOVED
   - clip: {fileID: 8300000, guid: 314ef9e619406c64b93556bd58e546d8, type: 3}
     id: NaviTakeDamage
   - clip: {fileID: 8300000, guid: 681c5041c7e6a624381afd6ca11b881c, type: 3}
     id: HeartTakeDamage
-  - clip: {fileID: 8300000, guid: d16fe93b4c4017f469b1a61d0b6d7c67, type: 3}
+  - clip: {fileID: 8300000, guid: 0818d0d55a6487f49a34fcc8754a0713, type: 3}
     id: TeleportFX
   - clip: {fileID: 8300000, guid: e06537bc03bdee5499e8b1a179cd71d3, type: 3}
     id: NaviJump
@@ -22905,7 +22905,7 @@ GameObject:
   m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1752733706
 Transform:
   m_ObjectHideFlags: 0
@@ -22936,8 +22936,6 @@ MonoBehaviour:
   TeleporterFXGO: {fileID: 1752733705}
   TeleporterShimmerGO: {fileID: 373676177}
   TeleporterFXOn: 0
-  TeleporterTimeLeft: 0.5
-  TeleporterTimerActive: 0
 --- !u!1 &1753701681
 GameObject:
   m_ObjectHideFlags: 0
@@ -26679,6 +26677,7 @@ MonoBehaviour:
   EnemyHandGO: {fileID: 902072244}
   PlayerScoreGO: {fileID: 950349261}
   TracksGO: {fileID: 1864705706}
+  TeleportShimmerGO: {fileID: 1752733705}
   curtainGO: {fileID: 136629087}
   EnemyScoreTest: {fileID: 1506508080}
   Dance1: 196
