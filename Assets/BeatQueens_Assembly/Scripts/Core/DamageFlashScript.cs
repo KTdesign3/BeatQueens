@@ -8,6 +8,8 @@ public class DamageFlashScript : MonoBehaviour
     MeshRenderer SkinnedMeshRenderer;
     Color origColor;
     float flashTime = .15f;
+
+    public GameObject NaviScoreIconGO;
     // Start is called before the first frame update
     void Start()
     {
@@ -38,12 +40,16 @@ public class DamageFlashScript : MonoBehaviour
         SkinnedMeshRenderer.material.color = Color.white;
         Invoke("FlashStop", flashTime);
         Debug.Log("FlashStart called");
+        NaviScoreIconGO.SetActive(true);
+
     }
 
     void FlashStop()
     {
         SkinnedMeshRenderer.material.color = Color.white;
         origColor = SkinnedMeshRenderer.material.color;
+        NaviScoreIconGO.SetActive(true);
+        Debug.Log("Navi score icon called");
     }
 
     public IEnumerator EFlash()

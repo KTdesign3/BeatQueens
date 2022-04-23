@@ -9,6 +9,7 @@ public class NaviFlashScript : MonoBehaviour
     Color origColor;
     float flashTime = .15f;
     public Material NaviMatOrg;
+    public GameObject NaviScoreIconGO;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,6 +40,7 @@ public class NaviFlashScript : MonoBehaviour
         SkinnedMeshRenderer.material.color = Color.black;
         Invoke("FlashStop", flashTime);
         Debug.Log("FlashStart called");
+
     }
 
     void FlashStop()
@@ -50,7 +52,9 @@ public class NaviFlashScript : MonoBehaviour
     public IEnumerator EFlash()
     {
         SkinnedMeshRenderer.material.color = Color.black;
+        NaviScoreIconGO.SetActive(true);
         yield return new WaitForSeconds(flashTime);
         SkinnedMeshRenderer.material.color = origColor;
+        NaviScoreIconGO.SetActive(false);
     }
 }

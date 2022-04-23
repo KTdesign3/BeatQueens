@@ -26,7 +26,7 @@ public class PlayerScore : MonoBehaviour
         if (other.tag == "Damage") //This tag is on the arrow boxes. When the arrow collides with the arrow box it enables can be pressed,
         {
             
-            ScoreScript.health -= 5;
+            ScoreScript.health -= 50;
             Debug.Log("Player has collided with a damage item!");
             SoundManager.inst.PlaySound("NaviTakeDamage");
             NaviGO.GetComponent<NaviFlashScript>().AttackFlash();
@@ -51,7 +51,8 @@ public class PlayerScore : MonoBehaviour
         PlayerVulnerable = true;
         ScoreScript.health -= 50;
 
-        PlayerDamageObject.GetComponent<HurtPlayerColorScript>().Injury();
+        //PlayerDamageObject.GetComponent<HurtPlayerColorScript>().Injury();
+        NaviGO.GetComponent<HurtPlayerColorScript>().Injury();
         Debug.Log("Player hurt flash play");
         //SoundManager.inst.PlaySound("NaviTakeDamage");
         //NaviGO.GetComponent<DamageFlashScript>().AttackFlash();
