@@ -408,7 +408,7 @@ public class PlayerMovement : MonoBehaviour
 
         ///////////////DASHING CODE END ///////////////////
 
-
+        /*
         if (FacingLeft == true)
         {
             FacingRight = false;
@@ -419,6 +419,19 @@ public class PlayerMovement : MonoBehaviour
         {
             FacingLeft = false;
             //PlayerRB.transform.Rotate(0, 0, 0); //Rotates player 180 when running.
+        } */
+
+
+        if (Input.GetKey(KeyCode.A) == true  && playerLocked == false) //Controls player moving left on the floor
+        {
+            FacingLeft = true;
+            //FacingRight = false;
+        }
+
+        if (Input.GetKey(KeyCode.D) == true && playerLocked == false) //Controls player moving left on the floor
+        {
+            //FacingLeft = false;
+            FacingRight = true;
         }
 
 
